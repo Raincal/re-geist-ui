@@ -1,9 +1,10 @@
 {
   "name": "bs-zeit-ui",
+  "namespace": "zeit-ui",
   "version": "0.1.0",
   "sources": {
-    "dir" : "src",
-    "subdirs" : true
+    "dir": "src",
+    "subdirs": true
   },
   "package-specs": {
     "module": "commonjs",
@@ -11,11 +12,13 @@
   },
   "suffix": ".bs.js",
   "bs-dependencies": [
-
+    "reason-react"
   ],
   "warnings": {
-    "error" : "+101"
+    "error": "+101"
   },
-  "namespace": true,
+  "reason": {
+    "react-jsx": 3
+  },
   "refmt": 3
 }

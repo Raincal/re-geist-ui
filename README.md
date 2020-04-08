@@ -1,6 +1,6 @@
-# Basic Reason Template
+# Reason bindings for @zeit-ui/react
 
-Hello! This project allows you to quickly get started with Reason and BuckleScript. If you wanted a more sophisticated version, try the `react` template (`bsb -theme react -init .`).
+This library provides Reason bindings for [@zeit-ui/react](https://react.zeit-ui.co/).
 
 # Build
 
