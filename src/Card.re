@@ -5,7 +5,21 @@ external make:
     ~children: React.element=?,
     ~className: string=?,
     ~hoverable: bool=?,
-    ~shadow: bool=?
+    ~shadow: bool=?,
+    ~_type: [@bs.string] [
+              | `default
+              | `secondary
+              | `success
+              | `warning
+              | `error
+              | `dark
+              | `lite
+              | `alert
+              | `purple
+              | `violet
+              | `cyan
+            ]
+              =?
   ) =>
   React.element =
   "Card";
