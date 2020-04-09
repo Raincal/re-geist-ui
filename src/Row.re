@@ -14,7 +14,6 @@ external make:
                 | `center
                 | [@bs.as "space-around"] `spaceAround
                 | [@bs.as "space-between"] `spaceBetween
-                | `abort
               ]
                 =?,
     ~align: [@bs.string] [ | `top | `middle | `bottom]=?,
