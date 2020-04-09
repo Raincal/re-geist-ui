@@ -12,3 +12,18 @@ external make:
   ) =>
   React.element =
   "Avatar";
+
+module Group = {
+  [@react.component] [@bs.module "@zeit-ui/react"] [@bs.scope "Avatar"]
+  external make:
+    (
+      ~style: ReactDOMRe.Style.t=?,
+      ~children: React.element=?,
+      ~name: string=?,
+      ~className: string=?,
+      ~id: string=?,
+      ~count: int=?
+    ) =>
+    React.element =
+    "Group";
+};
