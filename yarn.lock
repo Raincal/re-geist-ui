@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@zeit-ui/react@^0.0.1-beta.17":
-  version "0.0.1-beta.17"
-  resolved "https://registry.yarnpkg.com/@zeit-ui/react/-/react-0.0.1-beta.17.tgz#5c11dece0c1d4d71d2a861300271449e33761715"
-  integrity sha512-iJdINyWhJwdfuSpZ0kuXnJ1Y/asMhOYXMfkVu1U5HJhl8LkBswnEdgIW8fm+FJt3idck2YSRPRgu7TfnrGgOww==
+"@zeit-ui/react@^0.0.1-beta.20":
+  version "0.0.1-beta.20"
+  resolved "https://registry.yarnpkg.com/@zeit-ui/react/-/react-0.0.1-beta.20.tgz#91c59051f6dee9b30940217e231e4f9bca348e12"
+  integrity sha512-BTCtBhtFt6xsadghvT2zY/wyu8jy1yN1ELiPwo7EA+fPwpqxksoLYJ7swN6CzwieWEsNsR1/98rq+852c6elBw==
 
 bs-platform@^7.2.2:
   version "7.2.2"

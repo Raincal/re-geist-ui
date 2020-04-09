@@ -16,6 +16,6 @@
     "reason-react": "^0.7.0"
   },
   "dependencies": {
-    "@zeit-ui/react": "^0.0.1-beta.17"
+    "@zeit-ui/react": "^0.0.1-beta.20"
   }
 }
