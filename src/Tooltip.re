@@ -6,7 +6,7 @@ external make:
     ~id: string=?,
     ~name: string=?,
     ~className: string=?,
-    ~text: ZeitUiTypes.String_or_Element.t,
+    ~text: ZeitUiTypes.String_or_element.t,
     ~visible: bool=?,
     ~initialVisible: bool=?,
     ~hideArrow: bool=?,

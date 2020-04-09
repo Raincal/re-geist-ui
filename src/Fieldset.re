@@ -8,8 +8,8 @@ external make:
     ~className: string=?,
     ~value: string=?,
     ~label: string=?,
-    ~title: ZeitUiTypes.String_or_Element.t=?,
-    ~subtitle: ZeitUiTypes.String_or_Element.t=?
+    ~title: ZeitUiTypes.String_or_element.t=?,
+    ~subtitle: ZeitUiTypes.String_or_element.t=?
   ) =>
   React.element =
   "Fieldset";

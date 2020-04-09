@@ -1,4 +1,4 @@
-module String_or_Element = {
+module String_or_element = {
   [@unboxed]
   type t =
     | Any('a): t;

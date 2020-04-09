@@ -7,7 +7,7 @@ external make:
     ~name: string=?,
     ~className: string=?,
     ~title: string,
-    ~subtitle: ZeitUiTypes.String_or_Element.t=?,
+    ~subtitle: ZeitUiTypes.String_or_element.t=?,
     ~initialVisible: bool=?,
     ~shadow: bool=?
   ) =>
