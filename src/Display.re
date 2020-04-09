@@ -5,7 +5,7 @@ external make:
     ~children: React.element=?,
     ~className: string=?,
     ~id: string=?,
-    ~caption: string=?,
+    ~caption: ZeitUiTypes.String_or_Element.t=?,
     ~shadow: bool=?,
     ~width: string=?
   ) =>
