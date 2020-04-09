@@ -5,12 +5,15 @@ external make:
     ~children: React.element=?,
     ~className: string=?,
     ~id: string=?,
+    ~invert: bool=?,
     ~_type: [@bs.string] [
               | `default
               | `secondary
               | `success
               | `warning
               | `error
+              | `dark
+              | `lite
             ]
               =?
   ) =>
