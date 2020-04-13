@@ -6,13 +6,16 @@ external make:
     ~id: string=?,
     ~name: string=?,
     ~className: string=?,
+    ~value: string=?,
     ~initialValue: string=?,
     ~placeholder: string=?,
     ~size: [@bs.string] [ | `mini | `small | `medium | `large]=?,
     ~icon: React.element=?,
     ~pure: bool=?,
     ~disabled: bool=?,
-    ~onChange: string => unit=?
+    ~onChange: string => unit=?,
+    ~dropdownClassName: string=?,
+    ~dropdownStyle: ReactDOMRe.Style.t=?
   ) =>
   React.element =
   "Select";
