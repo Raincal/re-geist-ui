@@ -26,6 +26,7 @@ type palette = {
   purple: string,
   alert: string,
   violet: string,
+  link: string,
 };
 [@bs.obj]
 external palette:
@@ -57,6 +58,7 @@ external palette:
     ~purple: string=?,
     ~alert: string=?,
     ~violet: string=?,
+    ~link: string=?,
     unit
   ) =>
   palette;
@@ -65,11 +67,9 @@ type expressiveness;
 [@bs.obj]
 external expressiveness:
   (
-    ~linkColor: string=?,
     ~linkStyle: string=?,
     ~linkHoverStyle: string=?,
     ~dropdownBoxShadow: string=?,
-    ~dropdownTriangleStroke: string=?,
     ~scrollerStart: string=?,
     ~scrollerEnd: string=?,
     ~shadowSmall: string=?,
