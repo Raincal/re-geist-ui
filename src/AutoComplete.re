@@ -70,7 +70,8 @@ module Empty = {
       ~style: ReactDOMRe.Style.t=?,
       ~children: React.element=?,
       ~id: string=?,
-      ~className: string=?
+      ~className: string=?,
+      ~hidden: bool=?
     ) =>
     React.element =
     "Empty";
