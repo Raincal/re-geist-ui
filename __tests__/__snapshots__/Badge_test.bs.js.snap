@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Badge should re-render when size changed 1`] = `
+<div>
+  <span
+    class="jsx-4239924849 "
+  >
+    size
+  </span>
+</div>
+`;
+
+exports[`Badge should render different sizes 1`] = `
+<div>
+  <span
+    class="jsx-4239924849 "
+  >
+    mini
+  </span>
+  <span
+    class="jsx-4068503044 "
+  >
+    small
+  </span>
+  <span
+    class="jsx-2203766684 "
+  >
+    medium
+  </span>
+  <span
+    class="jsx-534962137 "
+  >
+    large
+  </span>
+</div>
+`;
+
+exports[`Badge should render different types 1`] = `
+<div>
+  <span
+    class="jsx-1444280796 "
+  >
+    badge
+  </span>
+  <span
+    class="jsx-1469374616 "
+  >
+    badge
+  </span>
+  <span
+    class="jsx-4200199851 "
+  >
+    badge
+  </span>
+  <span
+    class="jsx-4137986222 "
+  >
+    badge
+  </span>
+</div>
+`;

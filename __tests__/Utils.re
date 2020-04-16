@@ -13,6 +13,8 @@ external querySelectorAll: string => Dom.nodeList = "querySelectorAll";
 
 [@bs.get] external childElementCount: Dom.element => int = "childElementCount";
 
+[@bs.get] external style: Dom.element => Js.t({..}) = "style";
+
 // Utility Functions
 let str = React.string;
 
