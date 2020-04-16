@@ -1,0 +1,188 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button should render correctly 1`] = `
+<div>
+  <button
+    class="jsx-1659746940 btn "
+  >
+    <div
+      class="jsx-1659746940 text"
+    >
+      Button
+    </div>
+  </button>
+</div>
+`;
+
+exports[`Button should render empty button correctly 1`] = `
+<Memo
+  auto={false}
+  className=""
+  disabled={false}
+  effect={true}
+  ghost={false}
+  loading={false}
+  shadow={false}
+  size="medium"
+  type="default"
+/>
+`;
+
+exports[`Button should render special styles 1`] = `
+<div>
+  <div>
+    <button
+      class="jsx-1659746940 btn "
+    >
+      <div
+        class="jsx-1659746940 text"
+      >
+        button
+      </div>
+    </button>
+    <button
+      class="jsx-12290744 btn "
+    >
+      <div
+        class="jsx-12290744 text"
+      >
+        button
+      </div>
+    </button>
+    <button
+      class="jsx-396117423 btn "
+    >
+      <div
+        class="jsx-396117423 text"
+      >
+        button
+      </div>
+    </button>
+    <button
+      class="jsx-768117053 btn "
+    >
+      <div
+        class="jsx-2654305151 loading-container"
+      >
+        <span
+          class="jsx-2654305151 loading"
+        >
+          <i
+            class="jsx-2654305151"
+          />
+          <i
+            class="jsx-2654305151"
+          />
+          <i
+            class="jsx-2654305151"
+          />
+        </span>
+      </div>
+    </button>
+    <button
+      class="jsx-1883339725 btn "
+    >
+      <div
+        class="jsx-1883339725 text"
+      >
+        button
+      </div>
+    </button>
+    <button
+      class="jsx-101522438 btn "
+    >
+      <div
+        class="jsx-101522438 text"
+      >
+        button
+      </div>
+    </button>
+    <button
+      class="jsx-1659746940 btn "
+    >
+      <div
+        class="jsx-1659746940 text"
+      >
+        button
+      </div>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Button should support all sizes 1`] = `
+<div>
+  <div>
+    <button
+      class="jsx-2594557465 btn "
+    >
+      <div
+        class="jsx-2594557465 text"
+      />
+    </button>
+    <button
+      class="jsx-1838479141 btn "
+    >
+      <div
+        class="jsx-1838479141 text"
+      />
+    </button>
+    <button
+      class="jsx-1659746940 btn "
+    >
+      <div
+        class="jsx-1659746940 text"
+      />
+    </button>
+    <button
+      class="jsx-2052621984 btn "
+    >
+      <div
+        class="jsx-2052621984 text"
+      />
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Button should support all types 1`] = `
+<div>
+  <div>
+    <button
+      class="jsx-1261419054 btn "
+    >
+      <div
+        class="jsx-1261419054 text"
+      />
+    </button>
+    <button
+      class="jsx-2527857806 btn "
+    >
+      <div
+        class="jsx-2527857806 text"
+      />
+    </button>
+    <button
+      class="jsx-4186443502 btn "
+    >
+      <div
+        class="jsx-4186443502 text"
+      />
+    </button>
+    <button
+      class="jsx-2387909454 btn "
+    >
+      <div
+        class="jsx-2387909454 text"
+      />
+    </button>
+    <button
+      class="jsx-2934631470 btn "
+    >
+      <div
+        class="jsx-2934631470 text"
+      />
+    </button>
+  </div>
+</div>
+`;

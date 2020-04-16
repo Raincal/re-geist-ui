@@ -5,7 +5,7 @@
     "build": "bsb -make-world",
     "start": "bsb -make-world -w",
     "clean": "bsb -clean-world",
-    "test": "jest"
+    "test": "jest --config jest.config.js --no-cache --update-snapshot"
   },
   "keywords": [
     "BuckleScript",
@@ -19,6 +19,7 @@
     "@glennsl/bs-jest": "^0.5.1",
     "bs-platform": "^7.2.2",
     "bs-react-testing-library": "^0.7.2",
+    "bs-webapi": "^0.15.9",
     "reason-react": "^0.7.0"
   },
   "dependencies": {

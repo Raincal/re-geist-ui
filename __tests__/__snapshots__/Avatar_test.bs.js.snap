@@ -1,17 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Avatar render works 1`] = `
-<div>
-  <span
-    class="jsx-2836986977 avatar "
-  >
-    <span
-      class="jsx-2836986977 avatar-text"
-    />
-  </span>
-</div>
-`;
-
 exports[`Avatar should render component of a specified size 1`] = `
 <div>
   <span
@@ -19,6 +7,18 @@ exports[`Avatar should render component of a specified size 1`] = `
   >
     <span
       class="jsx-2256798273 avatar-text"
+    />
+  </span>
+</div>
+`;
+
+exports[`Avatar should render correctly 1`] = `
+<div>
+  <span
+    class="jsx-2836986977 avatar "
+  >
+    <span
+      class="jsx-2836986977 avatar-text"
     />
   </span>
 </div>

@@ -1,14 +1,11 @@
 open Jest;
 open Expect;
 open ReactTestingLibrary;
-
-[@bs.get] external text: Dom.element => string = "textContent";
-[@bs.send]
-external querySelectorAll: (Dom.element, string) => array(Dom.element) =
-  "querySelectorAll";
+open Webapi.Dom;
+open Utils;
 
 describe("Avatar", () => {
-  test("render works", () => {
+  test("should render correctly", () => {
     <Avatar /> |> render |> container |> expect |> toMatchSnapshot
   });
 
@@ -57,7 +54,8 @@ describe("Avatar", () => {
     <Avatar.Group> <Avatar /> <Avatar /> </Avatar.Group>
     |> render
     |> container
-    |> querySelectorAll(_, ".avatar")
+    |> querySelectorAll(".avatar")
+    |> NodeList.toArray
     |> expect
     |> toHaveLength(2)
   });

@@ -21,11 +21,12 @@
     "reason-react"
   ],
   "bs-dev-dependencies": [
+    "bs-webapi",
     "@glennsl/bs-jest",
     "bs-react-testing-library"
   ],
   "warnings": {
-    "number": "+A-48",
+    "number": "+A-10-48",
     "error": "+101"
   },
   "reason": {
