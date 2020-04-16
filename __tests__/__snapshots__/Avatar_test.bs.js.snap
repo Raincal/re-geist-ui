@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Avatar render works 1`] = `
+<div>
+  <span
+    class="jsx-2836986977 avatar "
+  >
+    <span
+      class="jsx-2836986977 avatar-text"
+    />
+  </span>
+</div>
+`;
+
+exports[`Avatar should render component of a specified size 1`] = `
+<div>
+  <span
+    class="jsx-2256798273 avatar "
+  >
+    <span
+      class="jsx-2256798273 avatar-text"
+    />
+  </span>
+</div>
+`;
+
+exports[`Avatar should render text element 1`] = `
+<div>
+  <span
+    class="jsx-2836986977 avatar "
+  >
+    <span
+      class="jsx-2836986977 avatar-text"
+    >
+      text
+    </span>
+  </span>
+</div>
+`;
+
+exports[`Avatar should stacked when avatars are in a group 1`] = `
+<div>
+  <div
+    class="jsx-3664929776 avatar-group "
+  >
+    <span
+      class="jsx-2836986977 avatar "
+    >
+      <span
+        class="jsx-2836986977 avatar-text"
+      />
+    </span>
+    <span
+      class="jsx-2836986977 avatar "
+    >
+      <span
+        class="jsx-2836986977 avatar-text"
+      />
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Avatar should support square 1`] = `
+<div>
+  <span
+    class="jsx-78662657 avatar "
+  >
+    <span
+      class="jsx-78662657 avatar-text"
+    />
+  </span>
+</div>
+`;
+
+exports[`Avatar stacked should be work 1`] = `
+<div>
+  <span
+    class="jsx-4122009433 avatar "
+  >
+    <img
+      class="jsx-4122009433 avatar-img"
+      src="https://zeit.co/api/www/avatar/?u=evilrabbit&s=160"
+    />
+  </span>
+</div>
+`;

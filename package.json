@@ -4,15 +4,21 @@
   "scripts": {
     "build": "bsb -make-world",
     "start": "bsb -make-world -w",
-    "clean": "bsb -clean-world"
+    "clean": "bsb -clean-world",
+    "test": "jest"
   },
   "keywords": [
-    "BuckleScript"
+    "BuckleScript",
+    "ReasonReact",
+    "reason-react",
+    "zeit-ui"
   ],
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "@glennsl/bs-jest": "^0.5.1",
     "bs-platform": "^7.2.2",
+    "bs-react-testing-library": "^0.7.2",
     "reason-react": "^0.7.0"
   },
   "dependencies": {
