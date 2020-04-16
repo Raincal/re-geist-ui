@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card should render correctly when nested 1`] = `
+<div>
+  <div
+    class="jsx-1425740062 card "
+  >
+    <div
+      class="jsx-4092616368 card "
+    >
+      <div
+        class="jsx-1425740062 card "
+      >
+        card
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Card should render different types 1`] = `
+<div>
+  <div
+    class="jsx-1659685625 card "
+  >
+    card
+  </div>
+  <div
+    class="jsx-790836445 card "
+  >
+    card
+  </div>
+  <div
+    class="jsx-2704681675 card "
+  >
+    card
+  </div>
+  <div
+    class="jsx-941747327 card "
+  >
+    card
+  </div>
+  <div
+    class="jsx-2101331767 card "
+  >
+    card
+  </div>
+  <div
+    class="jsx-1659685625 card "
+  >
+    card
+  </div>
+  <div
+    class="jsx-1976305450 card "
+  >
+    card
+  </div>
+</div>
+`;
+
+exports[`Card should support shadow and hoverable 1`] = `
+<div>
+  <div>
+    <div
+      class="jsx-3172072774 card "
+    >
+      card
+    </div>
+    <div
+      class="jsx-4092616368 card "
+    >
+      card
+    </div>
+    <div
+      class="jsx-4092616368 card "
+    >
+      card
+    </div>
+  </div>
+</div>
+`;

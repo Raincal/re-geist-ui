@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Capacity should override background color 1`] = `
+<div>
+  <div
+    class="jsx-1290235545 capacity "
+    title="50%"
+  >
+    <span
+      class="jsx-1290235545"
+    />
+  </div>
+</div>
+`;
+
+exports[`Capacity should render different widths based on limit-value 1`] = `
+<div>
+  <div>
+    <div
+      class="jsx-1322666848 capacity "
+      title="20%"
+    >
+      <span
+        class="jsx-1322666848"
+      />
+    </div>
+    <div
+      class="jsx-1717569241 capacity "
+      title="40%"
+    >
+      <span
+        class="jsx-1717569241"
+      />
+    </div>
+    <div
+      class="jsx-3827940340 capacity "
+      title="66.67%"
+    >
+      <span
+        class="jsx-3827940340"
+      />
+    </div>
+  </div>
+</div>
+`;
