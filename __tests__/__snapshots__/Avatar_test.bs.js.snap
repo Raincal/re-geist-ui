@@ -3,10 +3,10 @@
 exports[`Avatar should render component of a specified size 1`] = `
 <div>
   <span
-    class="jsx-2256798273 avatar "
+    class="jsx-377499007 avatar "
   >
     <span
-      class="jsx-2256798273 avatar-text"
+      class="jsx-377499007 avatar-text"
     />
   </span>
 </div>
@@ -15,10 +15,10 @@ exports[`Avatar should render component of a specified size 1`] = `
 exports[`Avatar should render correctly 1`] = `
 <div>
   <span
-    class="jsx-2836986977 avatar "
+    class="jsx-1511168735 avatar "
   >
     <span
-      class="jsx-2836986977 avatar-text"
+      class="jsx-1511168735 avatar-text"
     />
   </span>
 </div>
@@ -27,10 +27,10 @@ exports[`Avatar should render correctly 1`] = `
 exports[`Avatar should render text element 1`] = `
 <div>
   <span
-    class="jsx-2836986977 avatar "
+    class="jsx-1511168735 avatar "
   >
     <span
-      class="jsx-2836986977 avatar-text"
+      class="jsx-1511168735 avatar-text"
     >
       text
     </span>
@@ -44,17 +44,17 @@ exports[`Avatar should stacked when avatars are in a group 1`] = `
     class="jsx-3664929776 avatar-group "
   >
     <span
-      class="jsx-2836986977 avatar "
+      class="jsx-1511168735 avatar "
     >
       <span
-        class="jsx-2836986977 avatar-text"
+        class="jsx-1511168735 avatar-text"
       />
     </span>
     <span
-      class="jsx-2836986977 avatar "
+      class="jsx-1511168735 avatar "
     >
       <span
-        class="jsx-2836986977 avatar-text"
+        class="jsx-1511168735 avatar-text"
       />
     </span>
   </div>
@@ -64,10 +64,10 @@ exports[`Avatar should stacked when avatars are in a group 1`] = `
 exports[`Avatar should support square 1`] = `
 <div>
   <span
-    class="jsx-78662657 avatar "
+    class="jsx-1513467711 avatar "
   >
     <span
-      class="jsx-78662657 avatar-text"
+      class="jsx-1513467711 avatar-text"
     />
   </span>
 </div>
@@ -76,10 +76,10 @@ exports[`Avatar should support square 1`] = `
 exports[`Avatar stacked should be work 1`] = `
 <div>
   <span
-    class="jsx-4122009433 avatar "
+    class="jsx-3088329575 avatar "
   >
     <img
-      class="jsx-4122009433 avatar-img"
+      class="jsx-3088329575 avatar-img"
       src="https://zeit.co/api/www/avatar/?u=evilrabbit&s=160"
     />
   </span>
