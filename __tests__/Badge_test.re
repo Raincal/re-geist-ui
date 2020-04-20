@@ -1,4 +1,5 @@
 open Jest;
+open JestDom;
 open Expect;
 open ReactTestingLibrary;
 open Utils;
@@ -56,8 +57,10 @@ describe("Badge", () => {
       </Badge>
       |> render;
 
-    let styles = badge |> container |> querySelector("span") |> style;
-
-    styles##background |> expect |> toBe("white");
+    badge
+    |> container
+    |> querySelector("span")
+    |> expect
+    |> toHaveStyle("background: white");
   });
 });

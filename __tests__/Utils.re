@@ -17,8 +17,6 @@ external getAttribute: string => string = "getAttribute";
 
 [@bs.get] external childElementCount: Dom.element => int = "childElementCount";
 
-[@bs.get] external style: Dom.element => Js.t({..}) = "style";
-
 [@bs.get] external checked: Dom.element => bool = "checked";
 
 [@bs.get] external checkedNode: Dom.node => bool = "checked";

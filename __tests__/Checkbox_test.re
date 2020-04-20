@@ -1,4 +1,5 @@
 open Jest;
+open JestDom;
 open Expect;
 open ReactTestingLibrary;
 open Webapi.Dom;
@@ -78,9 +79,8 @@ describe("Checkbox", () => {
 
     wrapper
     |> querySelector(".text")
-    |> text
     |> expect
-    |> toContainString("state2");
+    |> toHaveTextContent(`Str("state2"));
   });
 
   test("should ignore events when disabled", () => {
@@ -104,10 +104,9 @@ describe("Checkbox", () => {
 
     wrapper
     |> querySelector(".text")
-    |> text
     |> expect
     |> not
-    |> toContainString("state2");
+    |> toHaveTextContent(`Str("state2"));
   });
 });
 
