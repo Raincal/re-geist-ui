@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`User should support image and text 1`] = `
+<div>
+  <div>
+    <div
+      class="jsx-1574151873 user "
+    >
+      <span
+        class="jsx-1412237087 avatar "
+      >
+        <span
+          class="jsx-1412237087 avatar-text"
+        >
+          witt
+        </span>
+      </span>
+      <div
+        class="jsx-1574151873 names"
+      >
+        <span
+          class="jsx-1574151873 name"
+        >
+          witt
+        </span>
+        <span
+          class="jsx-1574151873 social"
+        />
+      </div>
+    </div>
+    <div
+      class="jsx-1574151873 user "
+    >
+      <span
+        class="jsx-1412237087 avatar "
+      >
+        <img
+          class="jsx-1412237087 avatar-img"
+          src="https://unix.bio/assets/avatar.png"
+        />
+      </span>
+      <div
+        class="jsx-1574151873 names"
+      >
+        <span
+          class="jsx-1574151873 name"
+        >
+          witt
+        </span>
+        <span
+          class="jsx-1574151873 social"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
