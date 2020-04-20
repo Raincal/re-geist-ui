@@ -2,13 +2,9 @@ module Size = {
   [@unboxed]
   type t =
     | Any('a): t;
-  [@bs.inline]
   let mini = Any("mini");
-  [@bs.inline]
   let small = Any("small");
-  [@bs.inline]
   let medium = Any("medium");
-  [@bs.inline]
   let large = Any("large");
   let int = (v: int) => Any(v);
   let float = (v: float) => Any(v);
