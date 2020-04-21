@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tag should work with invert 1`] = `
+<div>
+  <span
+    class="jsx-205902025 "
+  >
+    success
+  </span>
+</div>
+`;
+
+exports[`Tag should work with types 1`] = `
+<div>
+  <span
+    class="jsx-4276219006 "
+  >
+    success
+  </span>
+  <span
+    class="jsx-3308147390 "
+  >
+    secondary
+  </span>
+  <span
+    class="jsx-818612030 "
+  >
+    error
+  </span>
+  <span
+    class="jsx-1204845502 "
+  >
+    dark
+  </span>
+</div>
+`;

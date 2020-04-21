@@ -1,0 +1,174 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ButtonDropdown should render multiple types 1`] = `
+<div>
+  <div
+    class="jsx-2173872008 btn-dropdown "
+  >
+    <button
+      class="jsx-764319870 "
+    >
+      Auto Mini
+    </button>
+    <details
+      class="jsx-2173872008"
+    >
+      <summary
+        class="jsx-2173872008"
+      >
+        <svg
+          class="jsx-4149612297"
+          fill="none"
+          height="2.5rem"
+          shape-rendering="geometricPrecision"
+          stroke="#666"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1"
+          style="color: rgb(102, 102, 102);"
+          viewBox="0 0 24 24"
+          width="2.5rem"
+        >
+          <path
+            class="jsx-4149612297"
+            d="M6 9l6 6 6-6"
+          />
+        </svg>
+      </summary>
+      <div
+        class="jsx-2173872008 content"
+      >
+        <button
+          class="jsx-63587918 "
+        >
+          Auto Mini
+        </button>
+        <button
+          class="jsx-1764530507 "
+        >
+          Auto Mini
+        </button>
+      </div>
+    </details>
+  </div>
+</div>
+`;
+
+exports[`ButtonDropdown should support types and sizes 1`] = `
+<div>
+  <div
+    class="jsx-1060345259 btn-dropdown "
+  >
+    <button
+      class="jsx-1592064754 "
+    >
+      Auto Mini
+    </button>
+    <details
+      class="jsx-1060345259"
+    >
+      <summary
+        class="jsx-1060345259"
+      >
+        <svg
+          class="jsx-4149612297"
+          fill="none"
+          height="1.5rem"
+          shape-rendering="geometricPrecision"
+          stroke="#666"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1"
+          style="color: rgb(102, 102, 102);"
+          viewBox="0 0 24 24"
+          width="1.5rem"
+        >
+          <path
+            class="jsx-4149612297"
+            d="M6 9l6 6 6-6"
+          />
+        </svg>
+      </summary>
+      <div
+        class="jsx-1060345259 content"
+      />
+    </details>
+  </div>
+  <div
+    class="jsx-173885087 btn-dropdown "
+  >
+    <button
+      class="jsx-2958472894 "
+    >
+      Auto Mini
+    </button>
+    <details
+      class="jsx-173885087"
+    >
+      <summary
+        class="jsx-173885087"
+      >
+        <svg
+          class="jsx-4149612297"
+          fill="none"
+          height="2.75rem"
+          shape-rendering="geometricPrecision"
+          stroke="#666"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1"
+          style="color: rgb(102, 102, 102);"
+          viewBox="0 0 24 24"
+          width="2.75rem"
+        >
+          <path
+            class="jsx-4149612297"
+            d="M6 9l6 6 6-6"
+          />
+        </svg>
+      </summary>
+      <div
+        class="jsx-173885087 content"
+      />
+    </details>
+  </div>
+  <div
+    class="jsx-1423498458 btn-dropdown "
+  >
+    <button
+      class="jsx-465151393 "
+    >
+      Secondary Action
+    </button>
+    <details
+      class="jsx-1423498458"
+    >
+      <summary
+        class="jsx-1423498458"
+      >
+        <svg
+          class="jsx-4149612297"
+          fill="none"
+          height="2.5rem"
+          shape-rendering="geometricPrecision"
+          stroke="#fff"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1"
+          style="color: rgb(255, 255, 255);"
+          viewBox="0 0 24 24"
+          width="2.5rem"
+        >
+          <path
+            class="jsx-4149612297"
+            d="M6 9l6 6 6-6"
+          />
+        </svg>
+      </summary>
+      <div
+        class="jsx-1423498458 content"
+      />
+    </details>
+  </div>
+</div>
+`;

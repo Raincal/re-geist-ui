@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Code should render correctly 1`] = `
+<div>
+  <button
+    class="jsx-1659746940 btn "
+  >
+    <div
+      class="jsx-1659746940 text"
+    />
+  </button>
+</div>
+`;
+
+exports[`Code should repspond to changed by width 1`] = `
+<div>
+  <pre
+    class="jsx-1426294006  "
+  >
+    <code
+      class="jsx-1426294006"
+    >
+      code
+    </code>
+  </pre>
+</div>
+`;
+
+exports[`Code should support block mode 1`] = `
+<div>
+  <pre
+    class="jsx-19125128  "
+  >
+    <code
+      class="jsx-19125128"
+    >
+      code
+    </code>
+  </pre>
+</div>
+`;

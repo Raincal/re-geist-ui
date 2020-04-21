@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AutoComplete should render correctly 1`] = `
+<div>
+  <div
+    class="jsx-878259126 auto-complete"
+  >
+    <div
+      class="jsx-2769733869 with-label"
+    >
+      <div
+        class="jsx-2769733869 input-container "
+      >
+        <div
+          class="jsx-2769733869 input-wrapper   "
+        >
+          <input
+            autocomplete="off"
+            class="jsx-2769733869  "
+            placeholder=""
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

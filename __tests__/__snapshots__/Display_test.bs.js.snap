@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Display should work with shadow and width 1`] = `
+<div>
+  <div
+    class="jsx-3489433013 display "
+  >
+    <div
+      class="jsx-3489433013 content"
+    >
+      display
+    </div>
+    <div
+      class="jsx-3489433013 caption"
+    >
+      <h1>
+        h1
+      </h1>
+    </div>
+  </div>
+  <div
+    class="jsx-1265085316 display "
+  >
+    <div
+      class="jsx-1265085316 content"
+    >
+      display
+    </div>
+    <div
+      class="jsx-1265085316 caption"
+    >
+      <h1>
+        h1
+      </h1>
+    </div>
+  </div>
+</div>
+`;

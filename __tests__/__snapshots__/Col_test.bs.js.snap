@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Col should work with span and offset 1`] = `
+<div>
+  <div>
+    <div
+      class="jsx-2271933317 col "
+    >
+      col
+    </div>
+    <div
+      class="jsx-3628460151 col "
+    >
+      col
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Divider should work with align and volume 1`] = `
+<div>
+  <div
+    class="jsx-1446773716 divider "
+    role="separator"
+  >
+    <span
+      class="jsx-1446773716 text start"
+    >
+      start
+    </span>
+  </div>
+  <div
+    class="jsx-1446773716 divider "
+    role="separator"
+  >
+    <span
+      class="jsx-1446773716 text start"
+    >
+      left
+    </span>
+  </div>
+  <div
+    class="jsx-1446773716 divider "
+    role="separator"
+  >
+    <span
+      class="jsx-1446773716 text end"
+    >
+      end
+    </span>
+  </div>
+  <div
+    class="jsx-1607227703 divider "
+    role="separator"
+  >
+    <span
+      class="jsx-1607227703 text start"
+    >
+      start
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Divider should work with type 1`] = `
+<div>
+  <div
+    class="jsx-4288912608 divider "
+    role="separator"
+  />
+  <div
+    class="jsx-419993888 divider "
+    role="separator"
+  />
+  <div
+    class="jsx-2444005024 divider "
+    role="separator"
+  />
+</div>
+`;
+
+exports[`Divider should work with x and y 1`] = `
+<div>
+  <div
+    class="jsx-3930644811 divider "
+    role="separator"
+  />
+  <div
+    class="jsx-1465044278 divider "
+    role="separator"
+  />
+</div>
+`;

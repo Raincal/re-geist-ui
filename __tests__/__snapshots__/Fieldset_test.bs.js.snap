@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Fieldset should render correctly 1`] = `
+<div>
+  <div
+    class="jsx-3852770618 fieldset "
+  >
+    <div
+      class="jsx-3852770618 content"
+    >
+      <h4
+        class="jsx-1120864964 "
+      >
+        title
+      </h4>
+      <p
+        class="jsx-2688026805 "
+      >
+        subtitle
+      </p>
+    </div>
+    <footer
+      class="jsx-3653099495 "
+    >
+      <div
+        class="jsx-646995404 "
+      >
+        status
+      </div>
+      <div
+        class="jsx-4264196999 "
+      >
+        <button>
+          Actions
+        </button>
+      </div>
+    </footer>
+  </div>
+</div>
+`;

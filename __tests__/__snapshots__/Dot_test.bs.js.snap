@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dot should supports types 1`] = `
+<div>
+  <span
+    class="jsx-3647239098 dot "
+  >
+    <span
+      class="jsx-3647239098 icon"
+    />
+    <span
+      class="jsx-3647239098 label"
+    />
+  </span>
+  <span
+    class="jsx-452445676 dot "
+  >
+    <span
+      class="jsx-452445676 icon"
+    />
+    <span
+      class="jsx-452445676 label"
+    />
+  </span>
+  <span
+    class="jsx-2314320205 dot "
+  >
+    <span
+      class="jsx-2314320205 icon"
+    />
+    <span
+      class="jsx-2314320205 label"
+    />
+  </span>
+  <span
+    class="jsx-3819686856 dot "
+  >
+    <span
+      class="jsx-3819686856 icon"
+    />
+    <span
+      class="jsx-3819686856 label"
+    />
+  </span>
+</div>
+`;

@@ -2,12 +2,12 @@ open Jest;
 open JestDom;
 open Expect;
 open ReactTestingLibrary;
-open Webapi.Dom;
 open Utils;
 
 describe("User", () => {
   test("should render correctly", () => {
     let wrapper = render(<User name={`String("witt")} />);
+    
     (() => wrapper |> unmount()) |> expect |> not |> toThrow;
   });
 
@@ -22,6 +22,7 @@ describe("User", () => {
           />
         </div>,
       );
+
     wrapper |> container |> expect |> toMatchSnapshot;
   });
 
@@ -42,13 +43,6 @@ describe("User", () => {
         </User>,
       );
 
-    wrapper
-    |> container
-    |> querySelectorAll("a")
-    |> NodeList.toArray
-    |> Array.length
-    |> expect
-    |> not
-    |> toBe(0);
+    wrapper |> container |> findBySelector("a") |> expect |> not |> toBe(0);
   });
 });
