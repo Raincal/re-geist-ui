@@ -3,10 +3,11 @@
 exports[`Button should render correctly 1`] = `
 <div>
   <button
-    class="jsx-1659746940 btn "
+    class="jsx-2859537842 btn "
+    type="button"
   >
     <div
-      class="jsx-1659746940 text"
+      class="text"
     >
       Button
     </div>
@@ -14,94 +15,98 @@ exports[`Button should render correctly 1`] = `
 </div>
 `;
 
-exports[`Button should render empty button correctly 1`] = `
-<Memo
-  auto={false}
-  className=""
-  disabled={false}
-  effect={true}
-  ghost={false}
-  loading={false}
-  shadow={false}
-  size="medium"
-  type="default"
-/>
-`;
+exports[`Button should render empty button correctly 1`] = `<Memo />`;
 
 exports[`Button should render special styles 1`] = `
 <div>
   <div>
     <button
-      class="jsx-1659746940 btn "
+      class="jsx-2859537842 btn "
+      type="button"
     >
       <div
-        class="jsx-1659746940 text"
+        class="text"
       >
         button
       </div>
     </button>
     <button
-      class="jsx-12290744 btn "
+      class="jsx-3196346758 btn "
+      type="button"
     >
       <div
-        class="jsx-12290744 text"
+        class="text"
       >
         button
       </div>
     </button>
     <button
-      class="jsx-396117423 btn "
+      class="jsx-3767918470 btn "
+      type="button"
     >
       <div
-        class="jsx-396117423 text"
+        class="text"
       >
         button
       </div>
     </button>
     <button
-      class="jsx-768117053 btn "
+      class="jsx-1338979910 btn "
+      type="button"
     >
       <div
-        class="jsx-2654305151 loading-container"
+        class="jsx-3880090443 btn-loading"
       >
-        <span
-          class="jsx-2654305151 loading"
+        <div
+          class="jsx-192632595 loading-container"
         >
-          <i
-            class="jsx-2654305151"
-          />
-          <i
-            class="jsx-2654305151"
-          />
-          <i
-            class="jsx-2654305151"
-          />
-        </span>
+          <span
+            class="jsx-192632595 loading"
+          >
+            <i
+              class="jsx-192632595"
+            />
+            <i
+              class="jsx-192632595"
+            />
+            <i
+              class="jsx-192632595"
+            />
+          </span>
+        </div>
       </div>
-    </button>
-    <button
-      class="jsx-1883339725 btn "
-    >
       <div
-        class="jsx-1883339725 text"
+        class="text"
       >
         button
       </div>
     </button>
     <button
-      class="jsx-101522438 btn "
+      class="jsx-2013177189 btn "
+      type="button"
     >
       <div
-        class="jsx-101522438 text"
+        class="text"
       >
         button
       </div>
     </button>
     <button
-      class="jsx-1659746940 btn "
+      class="jsx-889133054 btn "
+      type="button"
     >
       <div
-        class="jsx-1659746940 text"
+        class="text"
+      >
+        button
+      </div>
+    </button>
+    <button
+      class="jsx-2859537842 btn "
+      type="button"
+    >
+      <div
+        class="text"
       >
         button
       </div>
@@ -114,31 +119,35 @@ exports[`Button should support all sizes 1`] = `
 <div>
   <div>
     <button
-      class="jsx-2594557465 btn "
+      class="jsx-2276747868 btn "
+      type="button"
     >
       <div
-        class="jsx-2594557465 text"
+        class="text"
       />
     </button>
     <button
-      class="jsx-1838479141 btn "
+      class="jsx-209395622 btn "
+      type="button"
     >
       <div
-        class="jsx-1838479141 text"
+        class="text"
       />
     </button>
     <button
-      class="jsx-1659746940 btn "
+      class="jsx-2859537842 btn "
+      type="button"
     >
       <div
-        class="jsx-1659746940 text"
+        class="text"
       />
     </button>
     <button
-      class="jsx-2052621984 btn "
+      class="jsx-352542514 btn "
+      type="button"
     >
       <div
-        class="jsx-2052621984 text"
+        class="text"
       />
     </button>
   </div>
@@ -149,38 +158,43 @@ exports[`Button should support all types 1`] = `
 <div>
   <div>
     <button
-      class="jsx-1261419054 btn "
+      class="jsx-3011474918 btn "
+      type="button"
     >
       <div
-        class="jsx-1261419054 text"
+        class="text"
       />
     </button>
     <button
-      class="jsx-2527857806 btn "
+      class="jsx-1410225318 btn "
+      type="button"
     >
       <div
-        class="jsx-2527857806 text"
+        class="text"
       />
     </button>
     <button
-      class="jsx-4186443502 btn "
+      class="jsx-4021411590 btn "
+      type="button"
     >
       <div
-        class="jsx-4186443502 text"
+        class="text"
       />
     </button>
     <button
-      class="jsx-2387909454 btn "
+      class="jsx-3090015974 btn "
+      type="button"
     >
       <div
-        class="jsx-2387909454 text"
+        class="text"
       />
     </button>
     <button
-      class="jsx-2934631470 btn "
+      class="jsx-1075170789 btn "
+      type="button"
     >
       <div
-        class="jsx-2934631470 text"
+        class="text"
       />
     </button>
   </div>

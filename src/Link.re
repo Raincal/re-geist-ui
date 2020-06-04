@@ -9,7 +9,7 @@ external make:
     ~target: string=?,
     ~href: string=?,
     ~color: bool=?,
-    ~pure: bool=?,
+    ~icon: bool=?,
     ~underline: bool=?,
     ~block: bool=?
   ) =>

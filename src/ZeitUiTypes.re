@@ -1,11 +1,3 @@
-module String_or_element = {
-  [@unboxed]
-  type t =
-    | Any('a): t;
-  let string = (v: string) => Any(v);
-  let element = (v: React.element) => Any(v);
-};
-
 module String_or_stringArray = {
   [@unboxed]
   type t =
@@ -29,6 +21,21 @@ module String_or_number = {
   let string = (v: string) => Any(v);
   let number = (v: float) => Any(v);
 };
+
+type placement = [
+  | `top
+  | `topStart
+  | `topEnd
+  | `left
+  | `leftStart
+  | `leftEnd
+  | `bottom
+  | `bottomStart
+  | `bottomEnd
+  | `right
+  | `rightStart
+  | `rightEnd
+];
 
 type modalBindings = {
   [@bs.as "open"]

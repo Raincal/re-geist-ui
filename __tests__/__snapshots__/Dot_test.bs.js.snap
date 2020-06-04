@@ -3,43 +3,43 @@
 exports[`Dot should supports types 1`] = `
 <div>
   <span
-    class="jsx-3647239098 dot "
+    class="jsx-1693940369 dot "
   >
     <span
-      class="jsx-3647239098 icon"
+      class="jsx-1693940369 icon"
     />
     <span
-      class="jsx-3647239098 label"
+      class="jsx-1693940369 label"
     />
   </span>
   <span
-    class="jsx-452445676 dot "
+    class="jsx-933920327 dot "
   >
     <span
-      class="jsx-452445676 icon"
+      class="jsx-933920327 icon"
     />
     <span
-      class="jsx-452445676 label"
+      class="jsx-933920327 label"
     />
   </span>
   <span
-    class="jsx-2314320205 dot "
+    class="jsx-1124426214 dot "
   >
     <span
-      class="jsx-2314320205 icon"
+      class="jsx-1124426214 icon"
     />
     <span
-      class="jsx-2314320205 label"
+      class="jsx-1124426214 label"
     />
   </span>
   <span
-    class="jsx-3819686856 dot "
+    class="jsx-2942677411 dot "
   >
     <span
-      class="jsx-3819686856 icon"
+      class="jsx-2942677411 icon"
     />
     <span
-      class="jsx-3819686856 label"
+      class="jsx-2942677411 label"
     />
   </span>
 </div>

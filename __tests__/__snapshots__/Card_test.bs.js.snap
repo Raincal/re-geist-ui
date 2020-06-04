@@ -3,15 +3,27 @@
 exports[`Card should render correctly when nested 1`] = `
 <div>
   <div
-    class="jsx-1425740062 card "
+    class="jsx-16278101 card "
   >
     <div
-      class="jsx-4092616368 card "
+      class="jsx-2956695818 content "
     >
       <div
-        class="jsx-1425740062 card "
+        class="jsx-2747747579 card "
       >
-        card
+        <div
+          class="jsx-2956695818 content "
+        >
+          <div
+            class="jsx-16278101 card "
+          >
+            <div
+              class="jsx-2956695818 content "
+            >
+              card
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -21,39 +33,67 @@ exports[`Card should render correctly when nested 1`] = `
 exports[`Card should render different types 1`] = `
 <div>
   <div
-    class="jsx-1659685625 card "
+    class="jsx-2996907570 card "
   >
-    card
+    <div
+      class="jsx-2956695818 content "
+    >
+      card
+    </div>
   </div>
   <div
-    class="jsx-790836445 card "
+    class="jsx-2221906198 card "
   >
-    card
+    <div
+      class="jsx-2956695818 content "
+    >
+      card
+    </div>
   </div>
   <div
-    class="jsx-2704681675 card "
+    class="jsx-3064885888 card "
   >
-    card
+    <div
+      class="jsx-2956695818 content "
+    >
+      card
+    </div>
   </div>
   <div
-    class="jsx-941747327 card "
+    class="jsx-1227157556 card "
   >
-    card
+    <div
+      class="jsx-2956695818 content "
+    >
+      card
+    </div>
   </div>
   <div
-    class="jsx-2101331767 card "
+    class="jsx-3862717948 card "
   >
-    card
+    <div
+      class="jsx-2956695818 content "
+    >
+      card
+    </div>
   </div>
   <div
-    class="jsx-1659685625 card "
+    class="jsx-2996907570 card "
   >
-    card
+    <div
+      class="jsx-2956695818 content "
+    >
+      card
+    </div>
   </div>
   <div
-    class="jsx-1976305450 card "
+    class="jsx-3405434593 card "
   >
-    card
+    <div
+      class="jsx-2956695818 content "
+    >
+      card
+    </div>
   </div>
 </div>
 `;
@@ -62,19 +102,31 @@ exports[`Card should support shadow and hoverable 1`] = `
 <div>
   <div>
     <div
-      class="jsx-3172072774 card "
+      class="jsx-1690178701 card "
     >
-      card
+      <div
+        class="jsx-2956695818 content "
+      >
+        card
+      </div>
     </div>
     <div
-      class="jsx-4092616368 card "
+      class="jsx-2747747579 card "
     >
-      card
+      <div
+        class="jsx-2956695818 content "
+      >
+        card
+      </div>
     </div>
     <div
-      class="jsx-4092616368 card "
+      class="jsx-2747747579 card "
     >
-      card
+      <div
+        class="jsx-2956695818 content "
+      >
+        card
+      </div>
     </div>
   </div>
 </div>

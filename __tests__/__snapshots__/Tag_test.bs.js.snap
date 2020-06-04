@@ -3,7 +3,7 @@
 exports[`Tag should work with invert 1`] = `
 <div>
   <span
-    class="jsx-205902025 "
+    class="jsx-3485934268 "
   >
     success
   </span>
@@ -13,22 +13,22 @@ exports[`Tag should work with invert 1`] = `
 exports[`Tag should work with types 1`] = `
 <div>
   <span
-    class="jsx-4276219006 "
+    class="jsx-2465917227 "
   >
     success
   </span>
   <span
-    class="jsx-3308147390 "
+    class="jsx-1915979627 "
   >
     secondary
   </span>
   <span
-    class="jsx-818612030 "
+    class="jsx-3402345451 "
   >
     error
   </span>
   <span
-    class="jsx-1204845502 "
+    class="jsx-2763296875 "
   >
     dark
   </span>

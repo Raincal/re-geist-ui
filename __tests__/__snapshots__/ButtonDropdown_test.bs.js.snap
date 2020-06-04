@@ -3,21 +3,21 @@
 exports[`ButtonDropdown should render multiple types 1`] = `
 <div>
   <div
-    class="jsx-2173872008 btn-dropdown "
+    class="jsx-4250971365 btn-dropdown "
   >
     <button
-      class="jsx-764319870 "
+      class="jsx-3437962354 "
     >
       Auto Mini
     </button>
     <details
-      class="jsx-2173872008"
+      class="jsx-4250971365"
     >
       <summary
-        class="jsx-2173872008"
+        class="jsx-4250971365"
       >
         <svg
-          class="jsx-4149612297"
+          class="jsx-3359574434"
           fill="none"
           height="2.5rem"
           shape-rendering="geometricPrecision"
@@ -30,21 +30,21 @@ exports[`ButtonDropdown should render multiple types 1`] = `
           width="2.5rem"
         >
           <path
-            class="jsx-4149612297"
+            class="jsx-3359574434"
             d="M6 9l6 6 6-6"
           />
         </svg>
       </summary>
       <div
-        class="jsx-2173872008 content"
+        class="jsx-4250971365 content"
       >
         <button
-          class="jsx-63587918 "
+          class="jsx-38523714 "
         >
           Auto Mini
         </button>
         <button
-          class="jsx-1764530507 "
+          class="jsx-1519240263 "
         >
           Auto Mini
         </button>
@@ -57,21 +57,21 @@ exports[`ButtonDropdown should render multiple types 1`] = `
 exports[`ButtonDropdown should support types and sizes 1`] = `
 <div>
   <div
-    class="jsx-1060345259 btn-dropdown "
+    class="jsx-530256198 btn-dropdown "
   >
     <button
-      class="jsx-1592064754 "
+      class="jsx-2685698046 "
     >
       Auto Mini
     </button>
     <details
-      class="jsx-1060345259"
+      class="jsx-530256198"
     >
       <summary
-        class="jsx-1060345259"
+        class="jsx-530256198"
       >
         <svg
-          class="jsx-4149612297"
+          class="jsx-3359574434"
           fill="none"
           height="1.5rem"
           shape-rendering="geometricPrecision"
@@ -84,32 +84,32 @@ exports[`ButtonDropdown should support types and sizes 1`] = `
           width="1.5rem"
         >
           <path
-            class="jsx-4149612297"
+            class="jsx-3359574434"
             d="M6 9l6 6 6-6"
           />
         </svg>
       </summary>
       <div
-        class="jsx-1060345259 content"
+        class="jsx-530256198 content"
       />
     </details>
   </div>
   <div
-    class="jsx-173885087 btn-dropdown "
+    class="jsx-3992976690 btn-dropdown "
   >
     <button
-      class="jsx-2958472894 "
+      class="jsx-1337148082 "
     >
       Auto Mini
     </button>
     <details
-      class="jsx-173885087"
+      class="jsx-3992976690"
     >
       <summary
-        class="jsx-173885087"
+        class="jsx-3992976690"
       >
         <svg
-          class="jsx-4149612297"
+          class="jsx-3359574434"
           fill="none"
           height="2.75rem"
           shape-rendering="geometricPrecision"
@@ -122,32 +122,32 @@ exports[`ButtonDropdown should support types and sizes 1`] = `
           width="2.75rem"
         >
           <path
-            class="jsx-4149612297"
+            class="jsx-3359574434"
             d="M6 9l6 6 6-6"
           />
         </svg>
       </summary>
       <div
-        class="jsx-173885087 content"
+        class="jsx-3992976690 content"
       />
     </details>
   </div>
   <div
-    class="jsx-1423498458 btn-dropdown "
+    class="jsx-93118647 btn-dropdown "
   >
     <button
-      class="jsx-465151393 "
+      class="jsx-1042446509 "
     >
       Secondary Action
     </button>
     <details
-      class="jsx-1423498458"
+      class="jsx-93118647"
     >
       <summary
-        class="jsx-1423498458"
+        class="jsx-93118647"
       >
         <svg
-          class="jsx-4149612297"
+          class="jsx-3359574434"
           fill="none"
           height="2.5rem"
           shape-rendering="geometricPrecision"
@@ -160,13 +160,13 @@ exports[`ButtonDropdown should support types and sizes 1`] = `
           width="2.5rem"
         >
           <path
-            class="jsx-4149612297"
+            class="jsx-3359574434"
             d="M6 9l6 6 6-6"
           />
         </svg>
       </summary>
       <div
-        class="jsx-1423498458 content"
+        class="jsx-93118647 content"
       />
     </details>
   </div>

@@ -72,7 +72,7 @@ describe("Avatar", () => {
     let count = 20;
     <Avatar.Group count />
     |> render
-    |> getByText(~matcher=`RegExp([%bs.re "/\d/"]))
+    |> getByText(~matcher=`RegExp([%bs.re "/\\d/"]))
     |> text
     |> expect
     |> toContainString(string_of_int(count));

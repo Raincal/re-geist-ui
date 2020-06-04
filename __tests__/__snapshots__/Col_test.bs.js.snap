@@ -4,12 +4,12 @@ exports[`Col should work with span and offset 1`] = `
 <div>
   <div>
     <div
-      class="jsx-2271933317 col "
+      class="jsx-1815154890 col "
     >
       col
     </div>
     <div
-      class="jsx-3628460151 col "
+      class="jsx-1049252664 col "
     >
       col
     </div>

@@ -48,7 +48,7 @@ describe("Collapse", () => {
     let errorMessage = ref("");
 
     let consoleSpy: MockJs.fn(string => unit, string, unit) = [%raw
-      "jest.spyOn(console, 'warn')"
+      "jest.spyOn(console, 'error')"
     ];
     MockJs.mockImplementation(msg => errorMessage := msg, consoleSpy);
 

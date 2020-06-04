@@ -3,31 +3,29 @@
 exports[`Checkbox Group should render correctly 1`] = `
 <div>
   <div
-    class="jsx-3272639465 group "
+    class="jsx-1595250786 group "
   >
     <label
-      class="jsx-2611772628 "
+      class="jsx-1750119187 "
     >
       <svg
-        class="jsx-881160083"
+        class="jsx-3742322138"
         fill="none"
-        height="12px"
         viewBox="0 0 12 12"
-        width="12px"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          class="jsx-881160083"
+          class="jsx-3742322138"
           d="M8.5 0.5H3.5C1.84315 0.5 0.5 1.84315 0.5 3.5V8.5C0.5 10.1569 1.84315 11.5 3.5 11.5H8.5C10.1569 11.5 11.5 10.1569 11.5 8.5V3.5C11.5 1.84315 10.1569 0.5 8.5 0.5Z"
           stroke="#666"
         />
       </svg>
       <input
-        class="jsx-2611772628"
+        class="jsx-1750119187"
         type="checkbox"
       />
       <span
-        class="jsx-2611772628 text"
+        class="jsx-1750119187 text"
       >
         Sydney
       </span>
@@ -39,28 +37,26 @@ exports[`Checkbox Group should render correctly 1`] = `
 exports[`Checkbox should render correctly 1`] = `
 <div>
   <label
-    class="jsx-2611772628 "
+    class="jsx-1750119187 "
   >
     <svg
-      class="jsx-881160083"
+      class="jsx-3742322138"
       fill="none"
-      height="12px"
       viewBox="0 0 12 12"
-      width="12px"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        class="jsx-881160083"
+        class="jsx-3742322138"
         d="M8.5 0.5H3.5C1.84315 0.5 0.5 1.84315 0.5 3.5V8.5C0.5 10.1569 1.84315 11.5 3.5 11.5H8.5C10.1569 11.5 11.5 10.1569 11.5 8.5V3.5C11.5 1.84315 10.1569 0.5 8.5 0.5Z"
         stroke="#666"
       />
     </svg>
     <input
-      class="jsx-2611772628"
+      class="jsx-1750119187"
       type="checkbox"
     />
     <span
-      class="jsx-2611772628 text"
+      class="jsx-1750119187 text"
     >
       Sydney
     </span>

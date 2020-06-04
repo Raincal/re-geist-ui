@@ -3,20 +3,20 @@
 exports[`AutoComplete should render correctly 1`] = `
 <div>
   <div
-    class="jsx-878259126 auto-complete"
+    class="jsx-1423549012 auto-complete"
   >
     <div
-      class="jsx-2769733869 with-label"
+      class="jsx-1830426941 with-label"
     >
       <div
-        class="jsx-2769733869 input-container "
+        class="jsx-1830426941 input-container "
       >
         <div
-          class="jsx-2769733869 input-wrapper   "
+          class="jsx-1830426941 input-wrapper   "
         >
           <input
             autocomplete="off"
-            class="jsx-2769733869  "
+            class="jsx-1830426941  "
             placeholder=""
             type="text"
             value=""

@@ -4,51 +4,51 @@ exports[`User should support image and text 1`] = `
 <div>
   <div>
     <div
-      class="jsx-1574151873 user "
+      class="jsx-3839489348 user "
     >
       <span
-        class="jsx-1412237087 avatar "
+        class="jsx-35822646 avatar "
       >
         <span
-          class="jsx-1412237087 avatar-text"
+          class="jsx-35822646 avatar-text"
         >
           witt
         </span>
       </span>
       <div
-        class="jsx-1574151873 names"
+        class="jsx-3839489348 names"
       >
         <span
-          class="jsx-1574151873 name"
+          class="jsx-3839489348 name"
         >
           witt
         </span>
         <span
-          class="jsx-1574151873 social"
+          class="jsx-3839489348 social"
         />
       </div>
     </div>
     <div
-      class="jsx-1574151873 user "
+      class="jsx-3839489348 user "
     >
       <span
-        class="jsx-1412237087 avatar "
+        class="jsx-35822646 avatar "
       >
         <img
-          class="jsx-1412237087 avatar-img"
+          class="jsx-35822646 avatar-img"
           src="https://unix.bio/assets/avatar.png"
         />
       </span>
       <div
-        class="jsx-1574151873 names"
+        class="jsx-3839489348 names"
       >
         <span
-          class="jsx-1574151873 name"
+          class="jsx-3839489348 name"
         >
           witt
         </span>
         <span
-          class="jsx-1574151873 social"
+          class="jsx-3839489348 social"
         />
       </div>
     </div>

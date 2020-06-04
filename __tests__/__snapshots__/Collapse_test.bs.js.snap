@@ -1,0 +1,244 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Collapse should expand when title clicked 1`] = `
+NodeList [
+  <div
+    class="jsx-1419624097 container expanded"
+  >
+    <div
+      class="jsx-1419624097 content"
+    >
+      <div
+        class="jsx-1393326764 content"
+      >
+        content
+      </div>
+    </div>
+  </div>,
+]
+`;
+
+exports[`Collapse should work with initial visible 1`] = `
+<div>
+  <div
+    class="jsx-1393326764 collapse  "
+  >
+    <div
+      class="jsx-1393326764 view"
+      role="button"
+    >
+      <div
+        class="jsx-1393326764 title"
+      >
+        <h3
+          class="jsx-1393326764"
+        >
+          title
+        </h3>
+         
+        <svg
+          class="jsx-223719513"
+          fill="none"
+          height="24"
+          shape-rendering="geometricPrecision"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1.5"
+          style="color: currentColor;"
+          viewBox="0 0 24 24"
+          width="24"
+        >
+          <path
+            class="jsx-223719513"
+            d="M6 9l6 6 6-6"
+          />
+        </svg>
+      </div>
+      <div
+        class="jsx-1393326764 subtitle"
+      >
+        subtitle
+      </div>
+    </div>
+    <div
+      class="jsx-3813449285 container "
+    >
+      <div
+        class="jsx-3813449285 content"
+      >
+        <div
+          class="jsx-1393326764 content"
+        >
+          content
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="jsx-1393326764 collapse  "
+  >
+    <div
+      class="jsx-1393326764 view"
+      role="button"
+    >
+      <div
+        class="jsx-1393326764 title"
+      >
+        <h3
+          class="jsx-1393326764"
+        >
+          title
+        </h3>
+         
+        <svg
+          class="jsx-3441028315"
+          fill="none"
+          height="24"
+          shape-rendering="geometricPrecision"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1.5"
+          style="color: currentColor;"
+          viewBox="0 0 24 24"
+          width="24"
+        >
+          <path
+            class="jsx-3441028315"
+            d="M6 9l6 6 6-6"
+          />
+        </svg>
+      </div>
+    </div>
+    <div
+      class="jsx-1419624097 container expanded"
+    >
+      <div
+        class="jsx-1419624097 content"
+      >
+        <div
+          class="jsx-1393326764 content"
+        >
+          content
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Collapse should work with subtitle and shadow 1`] = `
+<div>
+  <div
+    class="jsx-1393326764 collapse  "
+  >
+    <div
+      class="jsx-1393326764 view"
+      role="button"
+    >
+      <div
+        class="jsx-1393326764 title"
+      >
+        <h3
+          class="jsx-1393326764"
+        >
+          title
+        </h3>
+         
+        <svg
+          class="jsx-223719513"
+          fill="none"
+          height="24"
+          shape-rendering="geometricPrecision"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1.5"
+          style="color: currentColor;"
+          viewBox="0 0 24 24"
+          width="24"
+        >
+          <path
+            class="jsx-223719513"
+            d="M6 9l6 6 6-6"
+          />
+        </svg>
+      </div>
+      <div
+        class="jsx-1393326764 subtitle"
+      >
+        subtitle
+      </div>
+    </div>
+    <div
+      class="jsx-3813449285 container "
+    >
+      <div
+        class="jsx-3813449285 content"
+      >
+        <div
+          class="jsx-1393326764 content"
+        >
+          content
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="jsx-1393326764 collapse shadow "
+  >
+    <div
+      class="jsx-1393326764 view"
+      role="button"
+    >
+      <div
+        class="jsx-1393326764 title"
+      >
+        <h3
+          class="jsx-1393326764"
+        >
+          title
+        </h3>
+         
+        <svg
+          class="jsx-223719513"
+          fill="none"
+          height="24"
+          shape-rendering="geometricPrecision"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1.5"
+          style="color: currentColor;"
+          viewBox="0 0 24 24"
+          width="24"
+        >
+          <path
+            class="jsx-223719513"
+            d="M6 9l6 6 6-6"
+          />
+        </svg>
+      </div>
+      <div
+        class="jsx-1393326764 subtitle"
+      >
+        subtitle
+      </div>
+    </div>
+    <div
+      class="jsx-3813449285 container "
+    >
+      <div
+        class="jsx-3813449285 content"
+      >
+        <div
+          class="jsx-1393326764 content"
+        >
+          content
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

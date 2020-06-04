@@ -26,7 +26,7 @@ external mockRestore: MockJs.fn(string => unit, string, unit) => unit =
 
 [@bs.module "@testing-library/react"]
 external waitForElement: (unit => Dom.element) => Js.Promise.t('a) =
-  "waitForElement";
+  "waitFor";
 
 // Utility Functions
 let str = React.string;
@@ -40,13 +40,7 @@ let sleep = ms =>
 let renderWithTestId = (~testId=?, element) => {
   switch (testId) {
   | Some(testId) =>
-    render(
-      ReasonReact.cloneElement(
-        element,
-        ~props={"data-testid": testId},
-        [||],
-      ),
-    )
+    render(React.cloneElement(element, {"data-testid": testId}))
   | None => render(element)
   };
 };

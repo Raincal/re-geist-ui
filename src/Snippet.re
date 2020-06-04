@@ -17,7 +17,7 @@ external make:
               | `lite
             ]
               =?,
-    ~fill: bool=?,
+    ~filled: bool=?,
     ~width: string=?,
     ~copy: [@bs.string] [ | `default | `slient | `prevent]=?
   ) =>

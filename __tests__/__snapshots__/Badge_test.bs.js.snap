@@ -3,7 +3,7 @@
 exports[`Badge should re-render when size changed 1`] = `
 <div>
   <span
-    class="jsx-4239924849 "
+    class="jsx-2259675582  "
   >
     size
   </span>
@@ -13,22 +13,22 @@ exports[`Badge should re-render when size changed 1`] = `
 exports[`Badge should render different sizes 1`] = `
 <div>
   <span
-    class="jsx-4239924849 "
+    class="jsx-2259675582  "
   >
     mini
   </span>
   <span
-    class="jsx-4068503044 "
+    class="jsx-2649261771  "
   >
     small
   </span>
   <span
-    class="jsx-2203766684 "
+    class="jsx-2222040147  "
   >
     medium
   </span>
   <span
-    class="jsx-534962137 "
+    class="jsx-7157526  "
   >
     large
   </span>
@@ -38,22 +38,22 @@ exports[`Badge should render different sizes 1`] = `
 exports[`Badge should render different types 1`] = `
 <div>
   <span
-    class="jsx-1444280796 "
+    class="jsx-1462554259  "
   >
     badge
   </span>
   <span
-    class="jsx-1469374616 "
+    class="jsx-3890763607  "
   >
     badge
   </span>
   <span
-    class="jsx-4200199851 "
+    class="jsx-1157746020  "
   >
     badge
   </span>
   <span
-    class="jsx-4137986222 "
+    class="jsx-1975066081  "
   >
     badge
   </span>

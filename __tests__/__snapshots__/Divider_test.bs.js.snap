@@ -3,41 +3,41 @@
 exports[`Divider should work with align and volume 1`] = `
 <div>
   <div
-    class="jsx-1446773716 divider "
+    class="jsx-1680976430 divider "
     role="separator"
   >
     <span
-      class="jsx-1446773716 text start"
+      class="jsx-1680976430 text start"
     >
       start
     </span>
   </div>
   <div
-    class="jsx-1446773716 divider "
+    class="jsx-1680976430 divider "
     role="separator"
   >
     <span
-      class="jsx-1446773716 text start"
+      class="jsx-1680976430 text start"
     >
       left
     </span>
   </div>
   <div
-    class="jsx-1446773716 divider "
+    class="jsx-1680976430 divider "
     role="separator"
   >
     <span
-      class="jsx-1446773716 text end"
+      class="jsx-1680976430 text end"
     >
       end
     </span>
   </div>
   <div
-    class="jsx-1607227703 divider "
+    class="jsx-1420028781 divider "
     role="separator"
   >
     <span
-      class="jsx-1607227703 text start"
+      class="jsx-1420028781 text start"
     >
       start
     </span>
@@ -48,15 +48,15 @@ exports[`Divider should work with align and volume 1`] = `
 exports[`Divider should work with type 1`] = `
 <div>
   <div
-    class="jsx-4288912608 divider "
+    class="jsx-3362292762 divider "
     role="separator"
   />
   <div
-    class="jsx-419993888 divider "
+    class="jsx-251590746 divider "
     role="separator"
   />
   <div
-    class="jsx-2444005024 divider "
+    class="jsx-1614429658 divider "
     role="separator"
   />
 </div>
@@ -65,11 +65,11 @@ exports[`Divider should work with type 1`] = `
 exports[`Divider should work with x and y 1`] = `
 <div>
   <div
-    class="jsx-3930644811 divider "
+    class="jsx-273775825 divider "
     role="separator"
   />
   <div
-    class="jsx-1465044278 divider "
+    class="jsx-2565006220 divider "
     role="separator"
   />
 </div>

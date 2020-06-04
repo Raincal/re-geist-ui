@@ -19,12 +19,16 @@
   "devDependencies": {
     "@glennsl/bs-jest": "^0.5.1",
     "bs-jest-dom": "^3.0.0",
-    "bs-platform": "^7.2.2",
+    "bs-platform": "^7.3.2",
     "bs-react-testing-library": "^0.7.2",
-    "bs-webapi": "^0.15.9",
-    "reason-react": "^0.7.0"
+    "bs-webapi": "^0.15.9"
   },
   "dependencies": {
-    "@zeit-ui/react": "^0.0.1-beta.32"
+    "@zeit-ui/react": "^1.7.0-canary.0"
+  },
+  "peerDependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "reason-react": "^0.8.0"
   }
 }

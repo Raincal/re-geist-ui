@@ -3,10 +3,10 @@
 exports[`Fieldset should render correctly 1`] = `
 <div>
   <div
-    class="jsx-3852770618 fieldset "
+    class="jsx-1370308080 fieldset "
   >
     <div
-      class="jsx-3852770618 content"
+      class="jsx-1378117926 content "
     >
       <h4
         class="jsx-1120864964 "
@@ -14,16 +14,16 @@ exports[`Fieldset should render correctly 1`] = `
         title
       </h4>
       <p
-        class="jsx-2688026805 "
+        class="jsx-2058623421 "
       >
         subtitle
       </p>
     </div>
     <footer
-      class="jsx-3653099495 "
+      class="jsx-2056013152 "
     >
       <div
-        class="jsx-646995404 "
+        class="jsx-478630753 "
       >
         status
       </div>

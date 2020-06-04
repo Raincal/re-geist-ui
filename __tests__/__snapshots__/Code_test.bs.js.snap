@@ -3,10 +3,11 @@
 exports[`Code should render correctly 1`] = `
 <div>
   <button
-    class="jsx-1659746940 btn "
+    class="jsx-2859537842 btn "
+    type="button"
   >
     <div
-      class="jsx-1659746940 text"
+      class="text"
     />
   </button>
 </div>
@@ -15,10 +16,10 @@ exports[`Code should render correctly 1`] = `
 exports[`Code should repspond to changed by width 1`] = `
 <div>
   <pre
-    class="jsx-1426294006  "
+    class="jsx-665532566 "
   >
     <code
-      class="jsx-1426294006"
+      class="jsx-665532566"
     >
       code
     </code>
@@ -29,10 +30,10 @@ exports[`Code should repspond to changed by width 1`] = `
 exports[`Code should support block mode 1`] = `
 <div>
   <pre
-    class="jsx-19125128  "
+    class="jsx-2559903272 "
   >
     <code
-      class="jsx-19125128"
+      class="jsx-2559903272"
     >
       code
     </code>

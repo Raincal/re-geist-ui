@@ -18,7 +18,8 @@ describe("Image", () => {
     wrapper |> container |> expect |> toMatchSnapshot;
     (() => wrapper |> unmount()) |> expect |> not |> toThrow;
 
-    wrapper |> rerender(<Image src=url width=20 height=20 animation=false />);
+    wrapper
+    |> rerender(<Image src=url width=20 height=20 disableSkeleton=true />);
     wrapper |> container |> querySelector("img") |> FireEvent.load;
     wrapper |> container |> expect |> toMatchSnapshot;
     (() => wrapper |> unmount()) |> expect |> not |> toThrow;
@@ -35,7 +36,8 @@ describe("Image", () => {
     wrapper |> rerender(<Image src=url width=20 />);
     wrapper |> container |> findBySelector(".skeleton") |> expect |> toBe(0);
 
-    wrapper |> rerender(<Image src=url width=20 height=20 animation=false />);
+    wrapper
+    |> rerender(<Image src=url width=20 height=20 disableSkeleton=true />);
     wrapper |> container |> findBySelector(".skeleton") |> expect |> toBe(0);
   });
 });
