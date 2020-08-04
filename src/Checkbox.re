@@ -10,6 +10,7 @@ external make:
     ~initialChecked: bool=?,
     ~value: string=?,
     ~disabled: bool=?,
+    ~size: [ | `mini | `small | `medium | `large]=?,
     ~onChange: ReactEvent.Synthetic.t => unit=?
   ) =>
   React.element =
@@ -22,7 +23,6 @@ module Group = {
       ~style: ReactDOMRe.Style.t=?,
       ~children: React.element=?,
       ~id: string=?,
-      ~spellCheck: bool=?,
       ~className: string=?,
       ~value: array(string)=?,
       ~disabled: bool=?,

@@ -53,17 +53,13 @@ external useCurrentState:
 type responsiveOptions;
 [@bs.obj]
 external makeResponsiveOptions:
-  (
-    ~match: [@bs.string] [ | `up | `down]=?,
-    ~ssrMatchMedia: string => bool=?,
-    unit
-  ) =>
+  (~match: [ | `up | `down]=?, ~ssrMatchMedia: string => bool=?, unit) =>
   responsiveOptions;
 
 [@bs.module "@zeit-ui/react"]
 external useMediaQuery:
   (
-    [@bs.string] [ | `xs | `sm | `md | `lg | `xl | `mobile],
+    [ | `xs | `sm | `md | `lg | `xl | `mobile],
     ~options: responsiveOptions=?,
     unit
   ) =>

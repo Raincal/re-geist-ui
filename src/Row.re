@@ -16,7 +16,7 @@ external make:
                 | [@bs.as "space-between"] `spaceBetween
               ]
                 =?,
-    ~align: [@bs.string] [ | `top | `middle | `bottom]=?,
+    ~align: [ | `top | `middle | `bottom]=?,
     ~component: string=?
   ) =>
   React.element =

@@ -3,7 +3,7 @@ module FileTreeValue = {
   [@bs.obj]
   external make:
     (
-      ~_type: [@bs.string] [ | `directory | `file],
+      ~_type: [ | `directory | `file],
       ~name: string,
       ~extra: string=?,
       ~files: array(t)=?,

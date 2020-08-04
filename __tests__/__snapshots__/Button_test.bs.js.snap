@@ -182,7 +182,7 @@ exports[`Button should support all types 1`] = `
       />
     </button>
     <button
-      class="jsx-3090015974 btn "
+      class="jsx-755551910 btn "
       type="button"
     >
       <div

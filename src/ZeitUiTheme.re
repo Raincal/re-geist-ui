@@ -120,7 +120,7 @@ external make:
     ~expressiveness: expressiveness=?,
     ~layout: layout=?,
     ~font: font=?,
-    ~_type: [@bs.string] [ | `dark | `light]=?,
+    ~_type: [ | `dark | `light]=?,
     unit
   ) =>
   t;

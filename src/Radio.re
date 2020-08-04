@@ -9,6 +9,7 @@ external make:
     ~checked: bool=?,
     ~value: string=?,
     ~disabled: bool=?,
+    ~size: [ | `mini | `small | `medium | `large]=?,
     ~onChange: ReactEvent.Synthetic.t => unit=?
   ) =>
   React.element =
@@ -27,6 +28,7 @@ module Group = {
       ~value: string=?,
       ~useRow: bool=?,
       ~disabled: bool=?,
+      ~size: [ | `mini | `small | `medium | `large]=?,
       ~onChange: string => unit=?
     ) =>
     React.element =

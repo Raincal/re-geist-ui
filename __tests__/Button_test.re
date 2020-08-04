@@ -42,7 +42,12 @@ describe("Button", () => {
   test("should render different text", () => {
     let wrapper = <Button> "button"->str </Button> |> render;
 
-    wrapper |> container |> text |> expect |> toContainString("button");
+    wrapper
+    |> container
+    |> text
+    |> expect
+    |> toContainString("button")
+    |> ignore;
 
     wrapper |> rerender(<Button> <span> "按钮"->str </span> </Button>);
 
@@ -68,7 +73,7 @@ describe("Button", () => {
       |> getByText(~matcher=`Str("state1"))
       |> parentElement;
 
-    wrapper |> text |> expect |> toContainString("state1");
+    wrapper |> text |> expect |> toContainString("state1") |> ignore;
 
     wrapper |> FireEvent.click;
 
@@ -92,11 +97,11 @@ describe("Button", () => {
       |> getByText(~matcher=`Str("state1"))
       |> parentElement;
 
-    wrapper |> text |> expect |> toContainString("state1");
+    wrapper |> text |> expect |> toContainString("state1") |> ignore;
 
     wrapper |> FireEvent.click;
 
-    wrapper |> text |> expect |> toContainString("state1");
+    wrapper |> text |> expect |> toContainString("state1") |> ignore;
     wrapper |> text |> expect |> not |> toContainString("state2");
   });
 
@@ -147,11 +152,11 @@ describe("Button", () => {
 
     wrapper |> container |> FireEvent.click;
 
-    sleep(500);
+    sleep(500) |> ignore;
 
     wrapper |> rerender(<Button loading=true> "button"->str </Button>);
 
-    sleep(500);
+    sleep(500) |> ignore;
 
     wrapper
     |> container

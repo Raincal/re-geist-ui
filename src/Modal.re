@@ -10,6 +10,8 @@ external make:
     ~_open: bool=?,
     ~onOpen: unit => unit=?,
     ~onClose: unit => unit=?,
+    ~width: string=?,
+    ~wrapClassName: string=?,
     ~disableBackdropClick: bool=?
   ) =>
   React.element =

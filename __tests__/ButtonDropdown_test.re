@@ -59,11 +59,18 @@ describe("ButtonDropdown", () => {
 
     let wrapper = render(<Wrapper />);
 
-    wrapper |> container |> expect |> toHaveTextContent(`Str("state1"));
+    wrapper
+    |> container
+    |> JestDom.expect
+    |> toHaveTextContent(`Str("state1"))
+    |> ignore;
 
     wrapper |> container |> querySelector("button") |> FireEvent.click;
 
-    wrapper |> container |> expect |> toHaveTextContent(`Str("state2"));
+    wrapper
+    |> container
+    |> JestDom.expect
+    |> toHaveTextContent(`Str("state2"));
   });
 
   test("should work correctly when callback missing", () => {
@@ -99,8 +106,8 @@ describe("ButtonDropdown", () => {
 
     wrapper
     |> container
-    |> expect
-    |> not
+    |> JestDom.expect
+    |> JestDom.not_
     |> toHaveTextContent(`Str("state2"));
   });
 
@@ -125,8 +132,8 @@ describe("ButtonDropdown", () => {
 
     wrapper
     |> container
-    |> expect
-    |> not
+    |> JestDom.expect
+    |> JestDom.not_
     |> toHaveTextContent(`Str("state2"));
   });
 
@@ -166,7 +173,7 @@ describe("ButtonDropdown", () => {
     wrapper
     |> container
     |> querySelector("details")
-    |> expect
+    |> JestDom.expect
     |> toHaveAttribute("open");
   });
 });

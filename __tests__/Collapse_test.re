@@ -7,7 +7,7 @@ describe("Collapse", () => {
   test("should render correctly", () => {
     let wrapper = render(<Collapse title="title"> "content"->str </Collapse>);
 
-    wrapper |> container |> expect |> toMatchSnapshot;
+    wrapper |> container |> expect |> toMatchSnapshot |> ignore;
 
     (() => wrapper |> unmount()) |> expect |> not |> toThrow;
   });
@@ -50,11 +50,13 @@ describe("Collapse", () => {
     let consoleSpy: MockJs.fn(string => unit, string, unit) = [%raw
       "jest.spyOn(console, 'error')"
     ];
-    MockJs.mockImplementation(msg => errorMessage := msg, consoleSpy);
+    MockJs.mockImplementation(msg => errorMessage := msg, consoleSpy)
+    |> ignore;
 
     render(
       <Collapse subtitle={`String("subtitle")}> "content"->str </Collapse>,
-    );
+    )
+    |> ignore;
 
     consoleSpy |> mockRestore;
 

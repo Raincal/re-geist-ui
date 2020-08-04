@@ -6,16 +6,19 @@ external make:
     ~id: string=?,
     ~name: string=?,
     ~className: string=?,
-    ~value: string=?,
-    ~initialValue: string=?,
+    ~value: ZeitUiTypes.String_or_stringArray.t=?,
+    ~initialValue: ZeitUiTypes.String_or_stringArray.t=?,
     ~placeholder: string=?,
-    ~size: [@bs.string] [ | `mini | `small | `medium | `large]=?,
+    ~width: string=?,
+    ~size: [ | `mini | `small | `medium | `large]=?,
     ~icon: React.element=?,
     ~pure: bool=?,
+    ~multiple: bool=?,
     ~disabled: bool=?,
-    ~onChange: string => unit=?,
+    ~onChange: ZeitUiTypes.String_or_stringArray.t => unit=?,
     ~dropdownClassName: string=?,
-    ~dropdownStyle: ReactDOMRe.Style.t=?
+    ~dropdownStyle: ReactDOMRe.Style.t=?,
+    ~disableMatchWidth: bool=?
   ) =>
   React.element =
   "Select";

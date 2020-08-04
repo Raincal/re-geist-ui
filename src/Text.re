@@ -18,14 +18,10 @@ external make:
     ~i: bool=?,
     ~em: bool=?,
     ~b: bool=?,
-    ~_type: [@bs.string] [
-              | `default
-              | `secondary
-              | `success
-              | `warning
-              | `error
-            ]
-              =?
+    ~blockquote: bool=?,
+    // TODO string | int
+    ~size: int=?,
+    ~_type: [ | `default | `secondary | `success | `warning | `error]=?
   ) =>
   React.element =
   "Text";

@@ -17,11 +17,11 @@ exports[`Capacity should render different widths based on limit-value 1`] = `
 <div>
   <div>
     <div
-      class="jsx-1322666848 capacity "
+      class="jsx-998630104 capacity "
       title="20%"
     >
       <span
-        class="jsx-1322666848"
+        class="jsx-998630104"
       />
     </div>
     <div
@@ -33,11 +33,11 @@ exports[`Capacity should render different widths based on limit-value 1`] = `
       />
     </div>
     <div
-      class="jsx-3827940340 capacity "
+      class="jsx-329303745 capacity "
       title="66.67%"
     >
       <span
-        class="jsx-3827940340"
+        class="jsx-329303745"
       />
     </div>
   </div>

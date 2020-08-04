@@ -7,7 +7,7 @@ describe("Col", () => {
   test("should render correctly", () => {
     let wrapper = render(<Col> "col"->str </Col>);
 
-    wrapper |> container |> expect |> toMatchSnapshot;
+    wrapper |> container |> expect |> toMatchSnapshot |> ignore;
 
     (() => wrapper |> unmount()) |> expect |> not |> toThrow;
   });
@@ -32,10 +32,20 @@ describe("Col", () => {
 
   test("should render different components", () => {
     let wrapper = render(<Col component="p" />);
-    wrapper |> container |> findBySelector("p") |> expect |> toBe(1);
+    wrapper
+    |> container
+    |> findBySelector("p")
+    |> expect
+    |> toBe(1)
+    |> ignore;
 
     wrapper |> rerender(<Col component="details" />);
-    wrapper |> container |> findBySelector("details") |> expect |> toBe(1);
+    wrapper
+    |> container
+    |> findBySelector("details")
+    |> expect
+    |> toBe(1)
+    |> ignore;
 
     wrapper |> rerender(<Col component="h1" />);
     wrapper |> container |> findBySelector("h1") |> expect |> toBe(1);

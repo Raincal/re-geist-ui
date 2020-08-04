@@ -13,16 +13,25 @@ external make:
               | `warning
               | `error
               | `abort
+              | [@bs.as "secondary-light"] `secondaryLight
+              | [@bs.as "success-light"] `successLight
+              | [@bs.as "warning-light"] `warningLight
+              | [@bs.as "error-light"] `errorLight
             ]
               =?,
-    ~size: [@bs.string] [ | `mini | `small | `medium | `large]=?,
+    ~size: [ | `mini | `small | `medium | `large]=?,
     ~ghost: bool=?,
     ~loading: bool=?,
     ~shadow: bool=?,
     ~auto: bool=?,
     ~effect: bool=?,
     ~disabled: bool=?,
-    ~onClick: ReactEvent.Mouse.t => unit=?
+    ~onClick: ReactEvent.Mouse.t => unit=?,
+    ~icon: React.element=?,
+    ~iconRight: React.element=?,
+    // TODO
+    ~htmlType: string=?,
+    ~ref: React.ref(option(Dom.element))=?
   ) =>
   React.element =
   "Button";

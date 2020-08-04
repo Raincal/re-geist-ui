@@ -7,7 +7,7 @@ describe("Divider", () => {
   test("should render correctly", () => {
     let wrapper = render(<Divider />);
 
-    wrapper |> container |> expect |> toMatchSnapshot;
+    wrapper |> container |> expect |> toMatchSnapshot |> ignore;
 
     (() => wrapper |> unmount()) |> expect |> not |> toThrow;
   });

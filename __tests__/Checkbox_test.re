@@ -9,7 +9,7 @@ describe("Checkbox", () => {
   test("should render correctly", () => {
     let wrapper = render(<Checkbox checked=true> "Sydney"->str </Checkbox>);
 
-    (() => wrapper |> unmount()) |> expect |> not |> toThrow;
+    (() => wrapper |> unmount()) |> expect |> not |> toThrow |> ignore;
 
     let rendered = render(<Checkbox> "Sydney"->str </Checkbox>);
 
@@ -24,7 +24,8 @@ describe("Checkbox", () => {
     |> querySelector("input")
     |> checked
     |> expect
-    |> ExpectJs.toBeTruthy;
+    |> ExpectJs.toBeTruthy
+    |> ignore;
 
     wrapper |> rerender(<Checkbox checked=false> "Sydney"->str </Checkbox>);
 
@@ -34,7 +35,8 @@ describe("Checkbox", () => {
     |> checked
     |> expect
     |> not
-    |> ExpectJs.toBeTruthy;
+    |> ExpectJs.toBeTruthy
+    |> ignore;
 
     wrapper
     |> rerender(<Checkbox initialChecked=true> "Sydney"->str </Checkbox>);
@@ -44,7 +46,8 @@ describe("Checkbox", () => {
     |> querySelector("input")
     |> checked
     |> expect
-    |> ExpectJs.toBeTruthy;
+    |> ExpectJs.toBeTruthy
+    |> ignore;
 
     wrapper
     |> rerender(<Checkbox initialChecked=false> "Sydney"->str </Checkbox>);
@@ -79,7 +82,7 @@ describe("Checkbox", () => {
 
     wrapper
     |> querySelector(".text")
-    |> expect
+    |> JestDom.expect
     |> toHaveTextContent(`Str("state2"));
   });
 
@@ -104,8 +107,8 @@ describe("Checkbox", () => {
 
     wrapper
     |> querySelector(".text")
-    |> expect
-    |> not
+    |> JestDom.expect
+    |> JestDom.not_
     |> toHaveTextContent(`Str("state2"));
   });
 });
@@ -119,7 +122,7 @@ describe("Checkbox Group", () => {
         </Checkbox.Group>,
       );
 
-    (() => wrapper |> unmount()) |> expect |> not |> toThrow;
+    (() => wrapper |> unmount()) |> expect |> not |> toThrow |> ignore;
 
     let rendered =
       render(
@@ -146,7 +149,8 @@ describe("Checkbox Group", () => {
     |> Belt.Option.getExn
     |> checkedNode
     |> expect
-    |> ExpectJs.toBeTruthy;
+    |> ExpectJs.toBeTruthy
+    |> ignore;
 
     wrapper
     |> container
@@ -174,7 +178,7 @@ describe("Checkbox Group", () => {
 
     sydney |> FireEvent.click;
 
-    value^ |> Array.length |> expect |> toBe(0);
+    value^ |> Array.length |> expect |> toBe(0) |> ignore;
 
     let beijing =
       wrapper |> getByText(~matcher=`Str("BeiJing")) |> parentElement;
@@ -200,7 +204,7 @@ describe("Checkbox Group", () => {
 
     sydney |> FireEvent.click;
 
-    value^ |> Array.length |> expect |> not |> toBe(0);
+    value^ |> Array.length |> expect |> not |> toBe(0) |> ignore;
 
     let beijing =
       wrapper |> getByText(~matcher=`Str("BeiJing")) |> parentElement;
@@ -216,14 +220,16 @@ describe("Checkbox Group", () => {
     let consoleSpy: MockJs.fn(string => unit, string, unit) = [%raw
       "jest.spyOn(console, 'error')"
     ];
-    MockJs.mockImplementation(msg => errorMessage := msg, consoleSpy);
+    MockJs.mockImplementation(msg => errorMessage := msg, consoleSpy)
+    |> ignore;
 
     render(
       <Checkbox.Group>
         <Checkbox value="sydney"> "Sydney"->str </Checkbox>
         <Checkbox value="beijing"> "BeiJing"->str </Checkbox>
       </Checkbox.Group>,
-    );
+    )
+    |> ignore;
 
     consoleSpy |> mockRestore;
 
@@ -236,14 +242,16 @@ describe("Checkbox Group", () => {
     let consoleSpy: MockJs.fn(string => unit, string, unit) = [%raw
       "jest.spyOn(console, 'error')"
     ];
-    MockJs.mockImplementation(msg => errorMessage := msg, consoleSpy);
+    MockJs.mockImplementation(msg => errorMessage := msg, consoleSpy)
+    |> ignore;
 
     render(
       <Checkbox.Group value=[||]>
         <Checkbox value="sydney" checked=true> "Sydney"->str </Checkbox>
         <Checkbox value="beijing"> "BeiJing"->str </Checkbox>
       </Checkbox.Group>,
-    );
+    )
+    |> ignore;
 
     consoleSpy |> mockRestore;
 

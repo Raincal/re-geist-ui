@@ -10,31 +10,46 @@ let url = {j| 'data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAAUA' +
 describe("Image", () => {
   test("should render correctly", () => {
     let wrapper = render(<Image src=url />);
-    wrapper |> container |> expect |> toMatchSnapshot;
-    (() => wrapper |> unmount()) |> expect |> not |> toThrow;
+    wrapper |> container |> expect |> toMatchSnapshot |> ignore;
+    (() => wrapper |> unmount()) |> expect |> not |> toThrow |> ignore;
 
     wrapper |> rerender(<Image src=url width=20 height=20 />);
     wrapper |> container |> querySelector("img") |> FireEvent.load;
-    wrapper |> container |> expect |> toMatchSnapshot;
-    (() => wrapper |> unmount()) |> expect |> not |> toThrow;
+    wrapper |> container |> expect |> toMatchSnapshot |> ignore;
+    (() => wrapper |> unmount()) |> expect |> not |> toThrow |> ignore;
 
     wrapper
     |> rerender(<Image src=url width=20 height=20 disableSkeleton=true />);
     wrapper |> container |> querySelector("img") |> FireEvent.load;
-    wrapper |> container |> expect |> toMatchSnapshot;
+    wrapper |> container |> expect |> toMatchSnapshot |> ignore;
     (() => wrapper |> unmount()) |> expect |> not |> toThrow;
   });
 
   test("should work correctly with skeleton", () => {
     let wrapper = render(<Image src=url width=20 height=20 />);
-    wrapper |> container |> findBySelector(".skeleton") |> expect |> toBe(1);
+    wrapper
+    |> container
+    |> findBySelector(".skeleton")
+    |> expect
+    |> toBe(1)
+    |> ignore;
 
     wrapper |> rerender(<Image src=url width=20 height=20 />);
     wrapper |> container |> querySelector("img") |> FireEvent.load;
-    wrapper |> container |> findBySelector(".skeleton") |> expect |> toBe(1);
+    wrapper
+    |> container
+    |> findBySelector(".skeleton")
+    |> expect
+    |> toBe(1)
+    |> ignore;
 
     wrapper |> rerender(<Image src=url width=20 />);
-    wrapper |> container |> findBySelector(".skeleton") |> expect |> toBe(0);
+    wrapper
+    |> container
+    |> findBySelector(".skeleton")
+    |> expect
+    |> toBe(0)
+    |> ignore;
 
     wrapper
     |> rerender(<Image src=url width=20 height=20 disableSkeleton=true />);

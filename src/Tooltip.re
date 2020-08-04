@@ -11,7 +11,7 @@ external makePropsZui:
     ~visible: bool=?,
     ~initialVisible: bool=?,
     ~hideArrow: bool=?,
-    ~_type: [@bs.string] [
+    ~_type: [
               | `default
               | `secondary
               | `success
@@ -21,7 +21,7 @@ external makePropsZui:
               | `lite
             ]
               =?,
-    ~placement: [@bs.string] [
+    ~placement: [
                   | `top
                   | `topStart
                   | `topEnd
@@ -36,7 +36,7 @@ external makePropsZui:
                   | `rightEnd
                 ]
                   =?,
-    ~trigger: [@bs.string] [ | `click | `hover]=?,
+    ~trigger: [ | `click | `hover]=?,
     ~enterDelay: int=?,
     ~leaveDelay: int=?,
     ~offset: int=?,
