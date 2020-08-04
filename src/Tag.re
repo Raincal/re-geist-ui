@@ -6,7 +6,7 @@ external make:
     ~className: string=?,
     ~id: string=?,
     ~invert: bool=?,
-    ~_type: [@bs.string] [
+    ~_type: [
               | `default
               | `secondary
               | `success

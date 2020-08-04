@@ -11,7 +11,7 @@ external make:
     ~visible: bool=?,
     ~initialVisible: bool=?,
     ~hideArrow: bool=?,
-    ~placement: [@bs.string] [
+    ~placement: [
                   | `top
                   | `topStart
                   | `topEnd
@@ -26,7 +26,7 @@ external make:
                   | `rightEnd
                 ]
                   =?,
-    ~trigger: [@bs.string] [ | `click | `hover]=?,
+    ~trigger: [ | `click | `hover]=?,
     ~enterDelay: int=?,
     ~leaveDelay: int=?,
     ~offset: int=?,

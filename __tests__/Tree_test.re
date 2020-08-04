@@ -48,15 +48,17 @@ describe("Tree", () => {
     |> render
     |> container
     |> expect
-    |> toMatchSnapshot;
+    |> toMatchSnapshot
+    |> ignore;
 
     <Tree.Folder name="components" />
     |> render
     |> container
     |> expect
-    |> toMatchSnapshot;
+    |> toMatchSnapshot
+    |> ignore;
 
-    wrapper |> container |> expect |> toMatchSnapshot;
+    wrapper |> container |> expect |> toMatchSnapshot |> ignore;
 
     (() => wrapper |> unmount()) |> expect |> not |> toThrow;
   });
@@ -67,8 +69,9 @@ describe("Tree", () => {
     wrapper
     |> container
     |> querySelector(".name")
-    |> expect
-    |> toHaveTextContent(`Str("extra"));
+    |> JestDom.expect
+    |> toHaveTextContent(`Str("extra"))
+    |> ignore;
 
     (() => wrapper |> unmount()) |> expect |> not |> toThrow;
   });

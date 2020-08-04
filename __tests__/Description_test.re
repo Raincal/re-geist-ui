@@ -7,7 +7,7 @@ describe("Description", () => {
   test("should render correctly", () => {
     let wrapper = render(<Description title={`String("title")} />);
 
-    wrapper |> container |> expect |> toMatchSnapshot;
+    wrapper |> container |> expect |> toMatchSnapshot |> ignore;
 
     (() => wrapper |> unmount()) |> expect |> not |> toThrow;
   });
@@ -15,7 +15,12 @@ describe("Description", () => {
   test("should render react-node on title", () => {
     let wrapper =
       render(<Description title={`Element(<p> "p"->str </p>)} />);
-    wrapper |> container |> findBySelector("p") |> expect |> toBe(1);
+    wrapper
+    |> container
+    |> findBySelector("p")
+    |> expect
+    |> toBe(1)
+    |> ignore;
 
     wrapper
     |> rerender(<Description title={`Element(<h1> "h1"->str </h1>)} />);
@@ -26,7 +31,12 @@ describe("Description", () => {
     let wrapper =
       render(<Description content={`Element(<p> "p"->str </p>)} />);
 
-    wrapper |> container |> findBySelector("p") |> expect |> toBe(1);
+    wrapper
+    |> container
+    |> findBySelector("p")
+    |> expect
+    |> toBe(1)
+    |> ignore;
 
     wrapper
     |> rerender(<Description content={`Element(<h1> "h1"->str </h1>)} />);

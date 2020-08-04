@@ -6,15 +6,8 @@ external make:
     ~className: string=?,
     ~id: string=?,
     ~title: string=?,
-    ~_type: [@bs.string] [
-              | `default
-              | `secondary
-              | `success
-              | `warning
-              | `error
-            ]
-              =?,
-    ~size: [@bs.string] [ | `mini | `small | `medium | `large]=?,
+    ~_type: [ | `default | `secondary | `success | `warning | `error]=?,
+    ~size: [ | `mini | `small | `medium | `large]=?,
     ~color: string=?,
     ~width: string=?,
     ~height: string=?

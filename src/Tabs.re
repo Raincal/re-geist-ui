@@ -8,6 +8,7 @@ external make:
     ~alt: string=?,
     ~initialValue: string=?,
     ~value: string=?,
+    ~hideDivider: bool=?,
     ~onChange: string => unit=?
   ) =>
   React.element =

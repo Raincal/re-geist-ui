@@ -7,15 +7,8 @@ external make:
     ~name: string=?,
     ~className: string=?,
     ~autoFocus: bool=?,
-    ~_type: [@bs.string] [
-              | `default
-              | `secondary
-              | `success
-              | `warning
-              | `error
-            ]
-              =?,
-    ~size: [@bs.string] [ | `mini | `small | `medium | `large]=?,
+    ~_type: [ | `default | `secondary | `success | `warning | `error]=?,
+    ~size: [ | `mini | `small | `medium | `large]=?,
     ~loading: bool=?,
     ~auto: bool=?,
     ~disabled: bool=?
@@ -32,14 +25,7 @@ module Item = {
       ~id: string=?,
       ~name: string=?,
       ~className: string=?,
-      ~_type: [@bs.string] [
-                | `default
-                | `secondary
-                | `success
-                | `warning
-                | `error
-              ]
-                =?,
+      ~_type: [ | `default | `secondary | `success | `warning | `error]=?,
       ~main: bool=?,
       ~onClick: ReactEvent.Mouse.t => unit=?
     ) =>

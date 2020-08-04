@@ -5,14 +5,7 @@ external make:
     ~children: React.element=?,
     ~className: string=?,
     ~id: string=?,
-    ~_type: [@bs.string] [
-              | `default
-              | `secondary
-              | `success
-              | `warning
-              | `error
-            ]
-              =?,
+    ~_type: [ | `default | `secondary | `success | `warning | `error]=?,
     ~label: ZeitUiTypes.String_or_bool.t=?,
     ~small: bool=?,
     ~filled: bool=?

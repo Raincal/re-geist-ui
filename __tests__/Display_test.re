@@ -10,7 +10,7 @@ describe("Display", () => {
         <Display caption={`String("caption")}> "display"->str </Display>,
       );
 
-    wrapper |> container |> expect |> toMatchSnapshot;
+    wrapper |> container |> expect |> toMatchSnapshot |> ignore;
 
     (() => wrapper |> unmount()) |> expect |> not |> toThrow;
   });
@@ -23,7 +23,7 @@ describe("Display", () => {
         </Display>,
       );
 
-    wrapper |> container |> expect |> toMatchSnapshot;
+    wrapper |> container |> expect |> toMatchSnapshot |> ignore;
 
     wrapper |> container |> findBySelector("h1") |> expect |> toBe(1);
   });

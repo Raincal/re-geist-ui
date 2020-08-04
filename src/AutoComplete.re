@@ -13,17 +13,9 @@ external make:
     ~id: string=?,
     ~name: string=?,
     ~className: string=?,
-    ~autoComplete: bool=?,
     ~options: array(AutoCompleteOption.t)=?,
-    ~status: [@bs.string] [
-               | `default
-               | `secondary
-               | `success
-               | `warning
-               | `error
-             ]
-               =?,
-    ~size: [@bs.string] [ | `mini | `small | `medium | `large]=?,
+    ~status: [ | `default | `secondary | `success | `warning | `error]=?,
+    ~size: [ | `mini | `small | `medium | `large]=?,
     ~initialValue: string=?,
     ~value: string=?,
     ~width: string=?,
@@ -31,7 +23,10 @@ external make:
     ~searching: bool=?,
     ~onChange: string => unit=?,
     ~onSearch: string => unit=?,
-    ~onSelect: string => unit=?
+    ~onSelect: string => unit=?,
+    ~dropdownClassName: string=?,
+    ~dropdownStyle: ReactDOMRe.Style.t=?,
+    ~disableMatchWidth: bool=?
   ) =>
   React.element =
   "AutoComplete";

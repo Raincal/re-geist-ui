@@ -14,14 +14,7 @@ type toast;
 external makeToast:
   (
     ~text: string=?,
-    ~_type: [@bs.string] [
-              | `default
-              | `secondary
-              | `success
-              | `warning
-              | `error
-            ]
-              =?,
+    ~_type: [ | `default | `secondary | `success | `warning | `error]=?,
     ~delay: int=?,
     ~actions: array(toastAction)=?,
     unit

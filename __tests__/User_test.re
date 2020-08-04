@@ -7,7 +7,7 @@ open Utils;
 describe("User", () => {
   test("should render correctly", () => {
     let wrapper = render(<User name={`String("witt")} />);
-    
+
     (() => wrapper |> unmount()) |> expect |> not |> toThrow;
   });
 
@@ -30,7 +30,10 @@ describe("User", () => {
     let wrapper =
       render(<User name={`String("witt")}> "description"->str </User>);
 
-    wrapper |> container |> expect |> toHaveTextContent(`Str("description"));
+    wrapper
+    |> container
+    |> JestDom.expect
+    |> toHaveTextContent(`Str("description"));
   });
 
   test("should render link on user.link", () => {

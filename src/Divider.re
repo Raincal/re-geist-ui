@@ -8,7 +8,7 @@ external make:
     ~className: string=?,
     ~x: float=?,
     ~y: float=?,
-    ~_type: [@bs.string] [
+    ~_type: [
               | `default
               | `secondary
               | `success

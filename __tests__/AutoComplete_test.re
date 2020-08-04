@@ -8,7 +8,7 @@ describe("AutoComplete", () => {
   test("should render correctly", () => {
     let wrapper = render(<AutoComplete />);
 
-    (() => wrapper |> unmount()) |> expect |> not |> toThrow;
+    (() => wrapper |> unmount()) |> expect |> not |> toThrow |> ignore;
 
     wrapper |> container |> expect |> toMatchSnapshot;
   });
@@ -37,8 +37,9 @@ describe("AutoComplete", () => {
     wrapper
     |> container
     |> queryByTestID("input")
-    |> expect
-    |> toHaveValue(`Str("value"));
+    |> JestDom.expect
+    |> toHaveValue(`Str("value"))
+    |> ignore;
 
     let wrapper =
       renderWithTestId(~testId="input", <AutoComplete value="value2" />);
@@ -46,7 +47,7 @@ describe("AutoComplete", () => {
     wrapper
     |> container
     |> queryByTestID("input")
-    |> expect
+    |> JestDom.expect
     |> toHaveValue(`Str("value2"));
   });
 
@@ -62,7 +63,7 @@ describe("AutoComplete", () => {
     wrapper
     |> container
     |> queryByTestID("input")
-    |> expect
+    |> JestDom.expect
     |> toHaveValue(`Str(""));
   });
 });

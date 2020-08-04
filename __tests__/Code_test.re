@@ -29,7 +29,12 @@ describe("Code", () => {
   test("should render pre element only in block mode", () => {
     let wrapper = render(<Code> "code"->str </Code>);
 
-    wrapper |> container |> findBySelector("pre") |> expect |> toBe(0);
+    wrapper
+    |> container
+    |> findBySelector("pre")
+    |> expect
+    |> toBe(0)
+    |> ignore;
 
     wrapper |> rerender(<Code block=true> "code"->str </Code>);
 

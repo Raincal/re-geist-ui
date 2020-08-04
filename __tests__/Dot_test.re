@@ -8,7 +8,7 @@ describe("Dot", () => {
   test("should render correctly", () => {
     let wrapper = render(<Dot />);
 
-    wrapper |> container |> expect |> toMatchSnapshot;
+    wrapper |> container |> expect |> toMatchSnapshot |> ignore;
 
     (() => wrapper |> unmount()) |> expect |> not |> toThrow;
   });
@@ -30,6 +30,6 @@ describe("Dot", () => {
   test("should be render text", () => {
     let wrapper = render(<Dot> "test"->str </Dot>);
 
-    wrapper |> container |> expect |> toHaveTextContent(`Str("test"));
+    wrapper |> container |> JestDom.expect |> toHaveTextContent(`Str("test"));
   });
 });

@@ -18,16 +18,16 @@
   "license": "MIT",
   "devDependencies": {
     "@glennsl/bs-jest": "^0.5.1",
-    "bs-jest-dom": "^3.0.0",
-    "bs-platform": "^7.3.2",
-    "bs-react-testing-library": "^0.7.2",
-    "bs-webapi": "^0.15.9",
+    "bs-jest-dom": "^4.1.1",
+    "bs-platform": "^8.2.0",
+    "bs-react-testing-library": "^0.7.3",
+    "bs-webapi": "^0.18.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "reason-react": "^0.8.0"
+    "reason-react": "^0.9.1"
   },
   "dependencies": {
-    "@zeit-ui/react": "^1.7.0-canary.0"
+    "@zeit-ui/react": "^1.8.0-canary.8"
   },
   "peerDependencies": {
     "react": "^16.13.1",

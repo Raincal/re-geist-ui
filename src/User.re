@@ -9,6 +9,7 @@ external makePropsZui:
     ~name: 'name,
     ~src: string=?,
     ~text: string=?,
+    ~altText: string=?,
     unit
   ) =>
   _;
@@ -23,6 +24,7 @@ let makeProps =
       ~name: [ | `String(string) | `Element(React.element)],
       ~src: option(string)=?,
       ~text: option(string)=?,
+      ~altText: option(string)=?,
       unit,
     ) =>
   makePropsZui(
@@ -34,6 +36,7 @@ let makeProps =
     ~name=ZeitUiHelper.unwrapValue(name),
     ~src?,
     ~text?,
+    ~altText?,
     unit,
   );
 

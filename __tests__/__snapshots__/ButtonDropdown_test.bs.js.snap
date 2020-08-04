@@ -39,12 +39,12 @@ exports[`ButtonDropdown should render multiple types 1`] = `
         class="jsx-4250971365 content"
       >
         <button
-          class="jsx-38523714 "
+          class="jsx-1829540994 "
         >
           Auto Mini
         </button>
         <button
-          class="jsx-1519240263 "
+          class="jsx-2107073986 "
         >
           Auto Mini
         </button>

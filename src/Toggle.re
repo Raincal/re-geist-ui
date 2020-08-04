@@ -8,7 +8,7 @@ external make:
     ~checked: bool=?,
     ~initialChecked: bool=?,
     ~onChange: ReactEvent.Synthetic.t => unit=?,
-    ~size: [@bs.string] [ | `mini | `small | `medium | `large]=?,
+    ~size: [ | `mini | `small | `medium | `large]=?,
     ~disabled: bool=?
   ) =>
   React.element =

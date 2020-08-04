@@ -63,12 +63,30 @@ module Group = {
 
 module Title = {
   [@react.component] [@bs.module "@zeit-ui/react"] [@bs.scope "Fieldset"]
-  external make: (~children: React.element=?) => React.element = "Title";
+  external make:
+    (~style: ReactDOMRe.Style.t=?, ~children: React.element=?) => React.element =
+    "Title";
 };
 
 module Subtitle = {
   [@react.component] [@bs.module "@zeit-ui/react"] [@bs.scope "Fieldset"]
-  external make: (~children: React.element=?) => React.element = "Subtitle";
+  external make:
+    (~style: ReactDOMRe.Style.t=?, ~children: React.element=?) => React.element =
+    "Subtitle";
+};
+
+module Content = {
+  [@react.component] [@bs.module "@zeit-ui/react"] [@bs.scope "Fieldset"]
+  external make:
+    (~style: ReactDOMRe.Style.t=?, ~children: React.element=?) => React.element =
+    "Content";
+};
+
+module Body = {
+  [@react.component] [@bs.module "@zeit-ui/react"] [@bs.scope "Fieldset"]
+  external make:
+    (~style: ReactDOMRe.Style.t=?, ~children: React.element=?) => React.element =
+    "Content";
 };
 
 module Footer = {
@@ -76,16 +94,24 @@ module Footer = {
     [@react.component]
     [@bs.module "@zeit-ui/react"]
     [@bs.scope ("Fieldset", "Footer")]
-    external make: (~children: React.element=?) => React.element = "Actions";
+    external make:
+      (~style: ReactDOMRe.Style.t=?, ~children: React.element=?) =>
+      React.element =
+      "Actions";
   };
 
   module Status = {
     [@react.component]
     [@bs.module "@zeit-ui/react"]
     [@bs.scope ("Fieldset", "Footer")]
-    external make: (~children: React.element=?) => React.element = "Status";
+    external make:
+      (~style: ReactDOMRe.Style.t=?, ~children: React.element=?) =>
+      React.element =
+      "Status";
   };
 
   [@react.component] [@bs.module "@zeit-ui/react"] [@bs.scope "Fieldset"]
-  external make: (~children: React.element=?) => React.element = "Footer";
+  external make:
+    (~style: ReactDOMRe.Style.t=?, ~children: React.element=?) => React.element =
+    "Footer";
 };

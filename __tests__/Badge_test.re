@@ -8,7 +8,7 @@ describe("Badge", () => {
   test("should supoort text", () => {
     let badge = <Badge> "count"->str </Badge> |> render;
 
-    badge |> container |> expect |> toMatchSnapshot;
+    badge |> container |> expect |> toMatchSnapshot |> ignore;
 
     (() => badge |> unmount()) |> expect |> not |> toThrow;
   });
@@ -30,7 +30,7 @@ describe("Badge", () => {
     let badge = <Badge> "size"->str </Badge> |> render;
 
     badge |> rerender(<Badge size=`small> "size"->str </Badge>);
-    badge |> container |> expect |> toMatchSnapshot;
+    badge |> container |> expect |> toMatchSnapshot |> ignore;
 
     badge |> rerender(<Badge size=`mini> "size"->str </Badge>);
     badge |> container |> expect |> toMatchSnapshot;
@@ -60,7 +60,7 @@ describe("Badge", () => {
     badge
     |> container
     |> querySelector("span")
-    |> expect
-    |> toHaveStyle("background: white");
+    |> JestDom.expect
+    |> toHaveStyle(`Str("background: white"));
   });
 });

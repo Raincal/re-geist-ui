@@ -8,14 +8,7 @@ external make:
     ~value: string=?,
     ~initialValue: string=?,
     ~placeholder: string=?,
-    ~status: [@bs.string] [
-               | `default
-               | `secondary
-               | `success
-               | `warning
-               | `error
-             ]
-               =?,
+    ~status: [ | `default | `secondary | `success | `warning | `error]=?,
     ~readOnly: bool=?,
     ~disabled: bool=?,
     ~width: string=?,

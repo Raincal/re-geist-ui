@@ -219,6 +219,14 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.8.0"
 
+"@babel/runtime-corejs3@^7.10.2":
+  version "7.11.0"
+  resolved "https://registry.yarnpkg.com/@babel/runtime-corejs3/-/runtime-corejs3-7.11.0.tgz#db54a2251206f0f8579b41918acb14488b8dd2c0"
+  integrity sha512-K0ioacsw8JgzDSPpUiGWokMvLzGvnZPXLrTsJfyHPrFsnp4yoKn+Ap/8NNZgWKZG9o5+qotH8tAa8AXn8gTN5A==
+  dependencies:
+    core-js-pure "^3.0.0"
+    regenerator-runtime "^0.13.4"
+
 "@babel/runtime-corejs3@^7.7.4":
   version "7.10.2"
   resolved "https://registry.yarnpkg.com/@babel/runtime-corejs3/-/runtime-corejs3-7.10.2.tgz#3511797ddf9a3d6f3ce46b99cc835184817eaa4e"
@@ -497,15 +505,16 @@
     dom-accessibility-api "^0.4.4"
     pretty-format "^25.5.0"
 
-"@testing-library/jest-dom@^5.5.0":
-  version "5.9.0"
-  resolved "https://registry.yarnpkg.com/@testing-library/jest-dom/-/jest-dom-5.9.0.tgz#86464c66cbe75e632b8adb636f539bfd0efc2c9c"
-  integrity sha512-uZ68dyILuM2VL13lGz4ehFEAgxzvLKRu8wQxyAZfejWnyMhmipJ60w4eG81NQikJHBfaYXx+Or8EaPQTDwGfPA==
+"@testing-library/jest-dom@^5.10.0":
+  version "5.11.2"
+  resolved "https://registry.yarnpkg.com/@testing-library/jest-dom/-/jest-dom-5.11.2.tgz#c49de331555c70127b5d7fc97344ad5265f4c54c"
+  integrity sha512-s+rWJx+lanEGKqvOl4qJR0rGjCrxsEjj9qjxFlg4NV4/FRD7fnUUAWPHqwpyafNHfLYArs58FADgdn4UKmjFmw==
   dependencies:
     "@babel/runtime" "^7.9.2"
-    "@types/testing-library__jest-dom" "^5.0.2"
+    "@types/testing-library__jest-dom" "^5.9.1"
+    aria-query "^4.2.2"
     chalk "^3.0.0"
-    css "^2.2.4"
+    css "^3.0.0"
     css.escape "^1.5.1"
     jest-diff "^25.1.0"
     jest-matcher-utils "^25.1.0"
@@ -613,10 +622,10 @@
   resolved "https://registry.yarnpkg.com/@types/stack-utils/-/stack-utils-1.0.1.tgz#0a851d3bd96498fa25c33ab7278ed3bd65f06c3e"
   integrity sha512-l42BggppR6zLmpfU6fq9HEa2oGPEI8yrSPL3GITjfRInppYFahObbIQOQK3UGxEnyQpltZLaPe75046NOZQikw==
 
-"@types/testing-library__jest-dom@^5.0.2":
-  version "5.9.1"
-  resolved "https://registry.yarnpkg.com/@types/testing-library__jest-dom/-/testing-library__jest-dom-5.9.1.tgz#aba5ee062b7880f69c212ef769389f30752806e5"
-  integrity sha512-yYn5EKHO3MPEMSOrcAb1dLWY+68CG29LiXKsWmmpVHqoP5+ZRiAVLyUHvPNrO2dABDdUGZvavMsaGpWNjM6N2g==
+"@types/testing-library__jest-dom@^5.9.1":
+  version "5.9.2"
+  resolved "https://registry.yarnpkg.com/@types/testing-library__jest-dom/-/testing-library__jest-dom-5.9.2.tgz#59e4771a1cf87d51e89a5cc8195cd3b647cba322"
+  integrity sha512-K7nUSpH/5i8i0NagTJ+uFUDRueDlnMNhJtMjMwTGPPSqyImbWC/hgKPDCKt6Phu2iMJg2kWqlax+Ucj2DKMwpA==
   dependencies:
     "@types/jest" "*"
 
@@ -632,10 +641,10 @@
   dependencies:
     "@types/yargs-parser" "*"
 
-"@zeit-ui/react@^1.7.0-canary.0":
-  version "1.7.0-canary.0"
-  resolved "https://registry.yarnpkg.com/@zeit-ui/react/-/react-1.7.0-canary.0.tgz#751d5fae84ae6e877d8597bdec2670dff55eadf9"
-  integrity sha512-BRB/TbMrj0Y5MWMxtI3GsQmxzU7y3opbXLfRZVLyFeBOv+P1rgbed7Yfof7jQV9k4Ly0MlcSEPtfYtzsXRPUew==
+"@zeit-ui/react@^1.8.0-canary.8":
+  version "1.8.0-canary.8"
+  resolved "https://registry.yarnpkg.com/@zeit-ui/react/-/react-1.8.0-canary.8.tgz#f08e309e3639d7de40c96a2a91b57901d59c2684"
+  integrity sha512-kusOeYu37xFFNRSpGBr0+nynEgbdv5nhZeyM00/YfcFq8ffXexUq09fxXnrkCYMFL0WQxuuFySNjH4wWG2If6Q==
   dependencies:
     styled-jsx "^3.2.5"
 
@@ -739,6 +748,14 @@ aria-query@^4.0.2:
   dependencies:
     "@babel/runtime" "^7.7.4"
     "@babel/runtime-corejs3" "^7.7.4"
+
+aria-query@^4.2.2:
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/aria-query/-/aria-query-4.2.2.tgz#0d2ca6c9aceb56b8977e9fed6aed7e15bbd2f83b"
+  integrity sha512-o/HelwhuKpTj/frsOsbNLNgnNGVIFsVP/SW2BSF14gVl7kAfMOJ6/8wUAUvG1R1NHKrfG+2sHZTu0yauT1qBrA==
+  dependencies:
+    "@babel/runtime" "^7.10.2"
+    "@babel/runtime-corejs3" "^7.10.2"
 
 arr-diff@^4.0.0:
   version "4.0.0"
@@ -943,37 +960,44 @@ browser-resolve@^1.11.3:
   dependencies:
     resolve "1.1.7"
 
-bs-dom-testing-library@^0.6.1:
-  version "0.6.1"
-  resolved "https://registry.yarnpkg.com/bs-dom-testing-library/-/bs-dom-testing-library-0.6.1.tgz#0de5fefa1796e9796622abdfe7536bf37ca8577c"
-  integrity sha512-4RSHYf0IpSQPnbFNYS26PqWBT6Xqk3DetnLAElP3qiD2qa3ertqNUDtgIB5jN1BXcDsJ3myAdDDE7QVlqnTgpw==
+bs-dom-testing-library@^0.6.2:
+  version "0.6.2"
+  resolved "https://registry.yarnpkg.com/bs-dom-testing-library/-/bs-dom-testing-library-0.6.2.tgz#ddc347d2390502eb4803ba44efe23dcb3c7e3f47"
+  integrity sha512-2B7VL5z/26MATtifzLGpoIA5bnCKrWXouvJ8dd9gmavxi2sWg0Kwt61Id5WhJbBsulRjTWB6u4NU7amDJMfS9g==
   dependencies:
     "@testing-library/dom" "^7.1.3"
 
-bs-jest-dom@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/bs-jest-dom/-/bs-jest-dom-3.0.0.tgz#2bd4d4523910dad97cf543071b45502fe8cb5042"
-  integrity sha512-BBV7Vk/lm9+QQJah/zXmeIOeFmWxTOJ6sa2ysxSvS3ecTHVSUB24Fydn5FVqBCm62JvW98ZvmARnTNslNgJiqg==
+bs-fetch@^0.6.2:
+  version "0.6.2"
+  resolved "https://registry.yarnpkg.com/bs-fetch/-/bs-fetch-0.6.2.tgz#37d982e9f79b9bc44c23e87ae78ccbee1f869adf"
+  integrity sha512-VXEjp8kY3vHPckaoy3d96Bx0KYjJAPLNISBwfpwMN26K6DtuZYwI2HKhx7zeHBajz1bRArfx7O8OOLcdtujMvg==
+
+bs-jest-dom@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/bs-jest-dom/-/bs-jest-dom-4.1.1.tgz#0cd42814fe8718d4507a4511708dd9bf9293eed7"
+  integrity sha512-DVRlT1JDytFckOBlmYUm8JkcW9movpvGMwQkSZJHBOJAXaq7bla2ObSovuzR/GHcCMwlPRF8f+zHY0zcoGbZnA==
   dependencies:
-    "@testing-library/jest-dom" "^5.5.0"
+    "@testing-library/jest-dom" "^5.10.0"
 
-bs-platform@^7.3.2:
-  version "7.3.2"
-  resolved "https://registry.yarnpkg.com/bs-platform/-/bs-platform-7.3.2.tgz#301f5c9b4e8cf5713cb60ca22e145e56e793affe"
-  integrity sha512-seJL5g4anK9la4erv+B2o2sMHQCxDF6OCRl9en3hbaUos/S3JsusQ0sPp4ORsbx5eXfHLYBwPljwKXlgpXtsgQ==
+bs-platform@^8.2.0:
+  version "8.2.0"
+  resolved "https://registry.yarnpkg.com/bs-platform/-/bs-platform-8.2.0.tgz#f3f4c06d5710a4c782f0ed030b1fe11e74a0a6d7"
+  integrity sha512-quvmUac/ZxGDsT7L5+6RNXrLPvLHkWFownacaqlwVoyAm770bPyupTRU49ALPGk3HpjfD5eE+lpGdOSPtuwJiA==
 
-bs-react-testing-library@^0.7.2:
-  version "0.7.2"
-  resolved "https://registry.yarnpkg.com/bs-react-testing-library/-/bs-react-testing-library-0.7.2.tgz#42238cc68384aa1f4c5fb28d03157fd23f094249"
-  integrity sha512-1VSPciqjZ+2KjRxVwnNUxnGpNVNL/4WJBNQHxfwOemp+rmZeHHX0U9fifcjw/CHho2t9rJw/baPPr46LsjahPw==
+bs-react-testing-library@^0.7.3:
+  version "0.7.3"
+  resolved "https://registry.yarnpkg.com/bs-react-testing-library/-/bs-react-testing-library-0.7.3.tgz#826faf3b736fab643772cfc00edf5fc43240860a"
+  integrity sha512-M/G8kHKPOtEy4kFJyQb8NyFdFd5/89YautlIABpXd59ugIjyHc40St/HZHqrZoDxqsxsZrtmioXAor8E7oTlTA==
   dependencies:
     "@testing-library/react" "^10.0.2"
-    bs-dom-testing-library "^0.6.1"
+    bs-dom-testing-library "^0.6.2"
 
-bs-webapi@^0.15.9:
-  version "0.15.9"
-  resolved "https://registry.yarnpkg.com/bs-webapi/-/bs-webapi-0.15.9.tgz#d1dcfbd40499a3b0914daacc4ceef47a0f3c906f"
-  integrity sha512-bmzO6na2HmK01a34qB7afMwfVSrPxkP3EGzUslWObuxbHIlLC0PAMDu4lA8ZL5NasBUctlwnA1QZxox+1aNWWw==
+bs-webapi@^0.18.0:
+  version "0.18.0"
+  resolved "https://registry.yarnpkg.com/bs-webapi/-/bs-webapi-0.18.0.tgz#f82277f26ef0901df04c93088d8360ea05e3d8b1"
+  integrity sha512-JvpmIMkkjSfxBaw8KQ3wN9/LrCDAnRCc/8xs452GjEqjtxCUWEU/ukDvz2Hn1f8a5mqlMAPMX5e+8DTyTedLbg==
+  dependencies:
+    bs-fetch "^0.6.2"
 
 bser@2.1.1:
   version "2.1.1"
@@ -1171,15 +1195,14 @@ css.escape@^1.5.1:
   resolved "https://registry.yarnpkg.com/css.escape/-/css.escape-1.5.1.tgz#42e27d4fa04ae32f931a4b4d4191fa9cddee97cb"
   integrity sha1-QuJ9T6BK4y+TGktNQZH6nN3ul8s=
 
-css@^2.2.4:
-  version "2.2.4"
-  resolved "https://registry.yarnpkg.com/css/-/css-2.2.4.tgz#c646755c73971f2bba6a601e2cf2fd71b1298929"
-  integrity sha512-oUnjmWpy0niI3x/mPL8dVEI1l7MnG3+HHyRPHf+YFSbK+svOhXpmSOcDURUh2aOCgl2grzrOPt1nHLuCVFULLw==
+css@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/css/-/css-3.0.0.tgz#4447a4d58fdd03367c516ca9f64ae365cee4aa5d"
+  integrity sha512-DG9pFfwOrzc+hawpmqX/dHYHJG+Bsdb0klhyi1sDneOgGOXy9wQIC8hzyVp1e4NRYDBdxcylvywPkkXCHAzTyQ==
   dependencies:
-    inherits "^2.0.3"
+    inherits "^2.0.4"
     source-map "^0.6.1"
-    source-map-resolve "^0.5.2"
-    urix "^0.1.0"
+    source-map-resolve "^0.6.0"
 
 cssom@^0.4.1:
   version "0.4.4"
@@ -1738,7 +1761,7 @@ inflight@^1.0.4:
     once "^1.3.0"
     wrappy "1"
 
-inherits@2, inherits@^2.0.3:
+inherits@2, inherits@^2.0.4:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/inherits/-/inherits-2.0.4.tgz#0fa2c64f932917c3433a0ded55363aae37416b7c"
   integrity sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==
@@ -2976,10 +2999,10 @@ realpath-native@^2.0.0:
   resolved "https://registry.yarnpkg.com/realpath-native/-/realpath-native-2.0.0.tgz#7377ac429b6e1fd599dc38d08ed942d0d7beb866"
   integrity sha512-v1SEYUOXXdbBZK8ZuNgO4TBjamPsiSgcFr0aP+tEKpQZK8vooEUqV6nm6Cv502mX4NF2EfsnVqtNAHG+/6Ur1Q==
 
-reason-react@^0.8.0:
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/reason-react/-/reason-react-0.8.0.tgz#a55143f95a872596c92b54595e7904c03ee7c9db"
-  integrity sha512-97AfK3eCF6vfP8rnbq3k6GgXsZt//OiPMINTUk5luJ8W0Wt/JaYsDG6eWKP8Zx3gPpxSU1EPjB1pUm6o6fBnFA==
+reason-react@^0.9.1:
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/reason-react/-/reason-react-0.9.1.tgz#30a887158200b659aa03e2d75ff4cc54dc462bb0"
+  integrity sha512-nlH0O2TDy9KzOLOW+vlEQk4ExHOeciyzFdoLcsmmiit6hx6H5+CVDrwJ+8aiaLT/kqK5xFOjy4PS7PftWz4plA==
 
 redent@^3.0.0:
   version "3.0.0"
@@ -3266,7 +3289,7 @@ snapdragon@^0.8.1:
     source-map-resolve "^0.5.0"
     use "^3.1.0"
 
-source-map-resolve@^0.5.0, source-map-resolve@^0.5.2:
+source-map-resolve@^0.5.0:
   version "0.5.3"
   resolved "https://registry.yarnpkg.com/source-map-resolve/-/source-map-resolve-0.5.3.tgz#190866bece7553e1f8f267a2ee82c606b5509a1a"
   integrity sha512-Htz+RnsXWk5+P2slx5Jh3Q66vhQj1Cllm0zvnaY98+NFx+Dv2CF/f5O/t8x+KaNdrdIAsruNzoh/KpialbqAnw==
@@ -3276,6 +3299,14 @@ source-map-resolve@^0.5.0, source-map-resolve@^0.5.2:
     resolve-url "^0.2.1"
     source-map-url "^0.4.0"
     urix "^0.1.0"
+
+source-map-resolve@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/source-map-resolve/-/source-map-resolve-0.6.0.tgz#3d9df87e236b53f16d01e58150fc7711138e5ed2"
+  integrity sha512-KXBr9d/fO/bWo97NXsPIAW1bFSBOuCnjbNTBMO7N59hsv5i9yzRDfcYwwt0l04+VqnKC+EwzvJZIP/qkuMgR/w==
+  dependencies:
+    atob "^2.1.2"
+    decode-uri-component "^0.2.0"
 
 source-map-support@^0.5.6:
   version "0.5.19"

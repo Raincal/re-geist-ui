@@ -7,7 +7,7 @@ external make:
     ~name: string=?,
     ~className: string=?,
     ~text: ZeitUiTypes.String_or_stringArray.t=?,
-    ~_type: [@bs.string] [
+    ~_type: [
               | `default
               | `secondary
               | `success
@@ -19,7 +19,7 @@ external make:
               =?,
     ~filled: bool=?,
     ~width: string=?,
-    ~copy: [@bs.string] [ | `default | `slient | `prevent]=?
+    ~copy: [ | `default | `slient | `prevent]=?
   ) =>
   React.element =
   "Snippet";
