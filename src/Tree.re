@@ -12,7 +12,7 @@ module FileTreeValue = {
     t;
 };
 
-[@react.component] [@bs.module "@zeit-ui/react"]
+[@react.component] [@bs.module "@geist-ui/react"]
 external make:
   (
     ~style: ReactDOMRe.Style.t=?,
@@ -28,7 +28,7 @@ external make:
   "Tree";
 
 module File = {
-  [@react.component] [@bs.module "@zeit-ui/react"] [@bs.scope "Tree"]
+  [@react.component] [@bs.module "@geist-ui/react"] [@bs.scope "Tree"]
   external make:
     (
       ~style: ReactDOMRe.Style.t=?,
@@ -43,7 +43,7 @@ module File = {
 };
 
 module Folder = {
-  [@react.component] [@bs.module "@zeit-ui/react"] [@bs.scope "Tree"]
+  [@react.component] [@bs.module "@geist-ui/react"] [@bs.scope "Tree"]
   external make:
     (
       ~style: ReactDOMRe.Style.t=?,

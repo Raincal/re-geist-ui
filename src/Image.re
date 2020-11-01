@@ -1,4 +1,4 @@
-[@react.component] [@bs.module "@zeit-ui/react"]
+[@react.component] [@bs.module "@geist-ui/react"]
 external make:
   (
     ~style: ReactDOMRe.Style.t=?,
@@ -17,7 +17,7 @@ external make:
   "Image";
 
 module Browser = {
-  [@react.component] [@bs.module "@zeit-ui/react"] [@bs.scope "Image"]
+  [@react.component] [@bs.module "@geist-ui/react"] [@bs.scope "Image"]
   external make:
     (
       ~style: ReactDOMRe.Style.t=?,

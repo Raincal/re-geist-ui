@@ -1,4 +1,4 @@
-[@react.component] [@bs.module "@zeit-ui/react"]
+[@react.component] [@bs.module "@geist-ui/react"]
 external make:
   (
     ~style: ReactDOMRe.Style.t=?,
@@ -18,7 +18,7 @@ external make:
   "Modal";
 
 module Title = {
-  [@react.component] [@bs.module "@zeit-ui/react"] [@bs.scope "Modal"]
+  [@react.component] [@bs.module "@geist-ui/react"] [@bs.scope "Modal"]
   external make:
     (~children: React.element=?, ~id: string=?, ~className: string=?) =>
     React.element =
@@ -26,7 +26,7 @@ module Title = {
 };
 
 module Subtitle = {
-  [@react.component] [@bs.module "@zeit-ui/react"] [@bs.scope "Modal"]
+  [@react.component] [@bs.module "@geist-ui/react"] [@bs.scope "Modal"]
   external make:
     (~children: React.element=?, ~id: string=?, ~className: string=?) =>
     React.element =
@@ -34,7 +34,7 @@ module Subtitle = {
 };
 
 module Content = {
-  [@react.component] [@bs.module "@zeit-ui/react"] [@bs.scope "Modal"]
+  [@react.component] [@bs.module "@geist-ui/react"] [@bs.scope "Modal"]
   external make:
     (~children: React.element=?, ~id: string=?, ~className: string=?) =>
     React.element =
@@ -42,7 +42,7 @@ module Content = {
 };
 
 module Actions = {
-  [@react.component] [@bs.module "@zeit-ui/react"] [@bs.scope "Modal"]
+  [@react.component] [@bs.module "@geist-ui/react"] [@bs.scope "Modal"]
   external make:
     (~children: React.element=?, ~id: string=?, ~className: string=?) =>
     React.element =
@@ -50,7 +50,7 @@ module Actions = {
 };
 
 module Action = {
-  [@react.component] [@bs.module "@zeit-ui/react"] [@bs.scope "Modal"]
+  [@react.component] [@bs.module "@geist-ui/react"] [@bs.scope "Modal"]
   external make:
     (
       ~children: React.element=?,

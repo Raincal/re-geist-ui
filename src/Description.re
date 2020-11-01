@@ -26,10 +26,10 @@ let makeProps =
     ~id?,
     ~key?,
     ~className?,
-    ~title=?title->(Belt.Option.map(v => ZeitUiHelper.unwrapValue(v))),
-    ~content=?content->(Belt.Option.map(v => ZeitUiHelper.unwrapValue(v))),
+    ~title=?title->(Belt.Option.map(v => GeistUIHelper.unwrapValue(v))),
+    ~content=?content->(Belt.Option.map(v => GeistUIHelper.unwrapValue(v))),
     unit,
   );
 
-[@bs.module "@zeit-ui/react"]
+[@bs.module "@geist-ui/react"]
 external make: React.component('a) = "Description";

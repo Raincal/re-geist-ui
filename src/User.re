@@ -33,17 +33,17 @@ let makeProps =
     ~id?,
     ~className?,
     ~key?,
-    ~name=ZeitUiHelper.unwrapValue(name),
+    ~name=GeistUIHelper.unwrapValue(name),
     ~src?,
     ~text?,
     ~altText?,
     unit,
   );
 
-[@bs.module "@zeit-ui/react"] external make: React.component('a) = "User";
+[@bs.module "@geist-ui/react"] external make: React.component('a) = "User";
 
 module Link = {
-  [@react.component] [@bs.module "@zeit-ui/react"] [@bs.scope "User"]
+  [@react.component] [@bs.module "@geist-ui/react"] [@bs.scope "User"]
   external make:
     (
       ~style: ReactDOMRe.Style.t=?,

@@ -1,4 +1,4 @@
-[@react.component] [@bs.module "@zeit-ui/react"]
+[@react.component] [@bs.module "@geist-ui/react"]
 external make:
   (
     ~style: ReactDOMRe.Style.t=?,
@@ -16,7 +16,7 @@ external make:
   "Table";
 
 module Column = {
-  [@react.component] [@bs.module "@zeit-ui/react"] [@bs.scope "Table"]
+  [@react.component] [@bs.module "@geist-ui/react"] [@bs.scope "Table"]
   external make:
     (
       ~style: ReactDOMRe.Style.t=?,

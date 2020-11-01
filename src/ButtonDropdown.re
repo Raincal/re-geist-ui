@@ -1,4 +1,4 @@
-[@react.component] [@bs.module "@zeit-ui/react"]
+[@react.component] [@bs.module "@geist-ui/react"]
 external make:
   (
     ~style: ReactDOMRe.Style.t=?,
@@ -17,7 +17,7 @@ external make:
   "ButtonDropdown";
 
 module Item = {
-  [@react.component] [@bs.module "@zeit-ui/react"] [@bs.scope "ButtonDropdown"]
+  [@react.component] [@bs.module "@geist-ui/react"] [@bs.scope "ButtonDropdown"]
   external make:
     (
       ~style: ReactDOMRe.Style.t=?,

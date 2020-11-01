@@ -10,7 +10,7 @@ module Size = {
   let float = (v: float) => Any(v);
 };
 
-[@react.component] [@bs.module "@zeit-ui/react"]
+[@react.component] [@bs.module "@geist-ui/react"]
 external make:
   (
     ~src: string=?,
@@ -26,7 +26,7 @@ external make:
   "Avatar";
 
 module Group = {
-  [@react.component] [@bs.module "@zeit-ui/react"] [@bs.scope "Avatar"]
+  [@react.component] [@bs.module "@geist-ui/react"] [@bs.scope "Avatar"]
   external make:
     (
       ~style: ReactDOMRe.Style.t=?,

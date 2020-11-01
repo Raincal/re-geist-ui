@@ -21,7 +21,7 @@ exports[`Checkbox Group should render correctly 1`] = `
         />
       </svg>
       <input
-        class="jsx-1750119187"
+        class="jsx-1750119187 "
         type="checkbox"
       />
       <span
@@ -52,7 +52,7 @@ exports[`Checkbox should render correctly 1`] = `
       />
     </svg>
     <input
-      class="jsx-1750119187"
+      class="jsx-1750119187 "
       type="checkbox"
     />
     <span

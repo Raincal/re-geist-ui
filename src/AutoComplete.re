@@ -5,7 +5,7 @@ module AutoCompleteOption = {
   };
 };
 
-[@react.component] [@bs.module "@zeit-ui/react"]
+[@react.component] [@bs.module "@geist-ui/react"]
 external make:
   (
     ~style: ReactDOMRe.Style.t=?,
@@ -32,7 +32,7 @@ external make:
   "AutoComplete";
 
 module Item = {
-  [@react.component] [@bs.module "@zeit-ui/react"] [@bs.scope "AutoComplete"]
+  [@react.component] [@bs.module "@geist-ui/react"] [@bs.scope "AutoComplete"]
   external make:
     (
       ~style: ReactDOMRe.Style.t=?,
@@ -46,7 +46,7 @@ module Item = {
 };
 
 module Searching = {
-  [@react.component] [@bs.module "@zeit-ui/react"] [@bs.scope "AutoComplete"]
+  [@react.component] [@bs.module "@geist-ui/react"] [@bs.scope "AutoComplete"]
   external make:
     (
       ~style: ReactDOMRe.Style.t=?,
@@ -59,7 +59,7 @@ module Searching = {
 };
 
 module Empty = {
-  [@react.component] [@bs.module "@zeit-ui/react"] [@bs.scope "AutoComplete"]
+  [@react.component] [@bs.module "@geist-ui/react"] [@bs.scope "AutoComplete"]
   external make:
     (
       ~style: ReactDOMRe.Style.t=?,

@@ -37,16 +37,16 @@ let makeProps =
     ~name?,
     ~className?,
     ~title,
-    ~subtitle=?subtitle->(Belt.Option.map(v => ZeitUiHelper.unwrapValue(v))),
+    ~subtitle=?subtitle->(Belt.Option.map(v => GeistUIHelper.unwrapValue(v))),
     ~initialVisible?,
     ~shadow?,
     unit,
   );
 
-[@bs.module "@zeit-ui/react"] external make: React.component('a) = "Collapse";
+[@bs.module "@geist-ui/react"] external make: React.component('a) = "Collapse";
 
 module Group = {
-  [@react.component] [@bs.module "@zeit-ui/react"] [@bs.scope "Collapse"]
+  [@react.component] [@bs.module "@geist-ui/react"] [@bs.scope "Collapse"]
   external make:
     (
       ~style: ReactDOMRe.Style.t=?,

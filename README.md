@@ -1,6 +1,6 @@
-# Reason bindings for @zeit-ui/react
+# Reason bindings for @geist-ui/react
 
-This library provides Reason bindings for [@zeit-ui/react](https://react.zeit-ui.co/).
+This library provides Reason bindings for [@geist-ui/react](https://github.com/geist-org/react).
 
 # Build
 

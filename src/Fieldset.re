@@ -38,15 +38,15 @@ let makeProps =
     ~key?,
     ~value?,
     ~label?,
-    ~title=?title->(Belt.Option.map(v => ZeitUiHelper.unwrapValue(v))),
-    ~subtitle=?subtitle->(Belt.Option.map(v => ZeitUiHelper.unwrapValue(v))),
+    ~title=?title->(Belt.Option.map(v => GeistUIHelper.unwrapValue(v))),
+    ~subtitle=?subtitle->(Belt.Option.map(v => GeistUIHelper.unwrapValue(v))),
     unit,
   );
 
-[@bs.module "@zeit-ui/react"] external make: React.component('a) = "Fieldset";
+[@bs.module "@geist-ui/react"] external make: React.component('a) = "Fieldset";
 
 module Group = {
-  [@react.component] [@bs.module "@zeit-ui/react"] [@bs.scope "Fieldset"]
+  [@react.component] [@bs.module "@geist-ui/react"] [@bs.scope "Fieldset"]
   external make:
     (
       ~style: ReactDOMRe.Style.t=?,
@@ -62,28 +62,28 @@ module Group = {
 };
 
 module Title = {
-  [@react.component] [@bs.module "@zeit-ui/react"] [@bs.scope "Fieldset"]
+  [@react.component] [@bs.module "@geist-ui/react"] [@bs.scope "Fieldset"]
   external make:
     (~style: ReactDOMRe.Style.t=?, ~children: React.element=?) => React.element =
     "Title";
 };
 
 module Subtitle = {
-  [@react.component] [@bs.module "@zeit-ui/react"] [@bs.scope "Fieldset"]
+  [@react.component] [@bs.module "@geist-ui/react"] [@bs.scope "Fieldset"]
   external make:
     (~style: ReactDOMRe.Style.t=?, ~children: React.element=?) => React.element =
     "Subtitle";
 };
 
 module Content = {
-  [@react.component] [@bs.module "@zeit-ui/react"] [@bs.scope "Fieldset"]
+  [@react.component] [@bs.module "@geist-ui/react"] [@bs.scope "Fieldset"]
   external make:
     (~style: ReactDOMRe.Style.t=?, ~children: React.element=?) => React.element =
     "Content";
 };
 
 module Body = {
-  [@react.component] [@bs.module "@zeit-ui/react"] [@bs.scope "Fieldset"]
+  [@react.component] [@bs.module "@geist-ui/react"] [@bs.scope "Fieldset"]
   external make:
     (~style: ReactDOMRe.Style.t=?, ~children: React.element=?) => React.element =
     "Content";
@@ -92,7 +92,7 @@ module Body = {
 module Footer = {
   module Actions = {
     [@react.component]
-    [@bs.module "@zeit-ui/react"]
+    [@bs.module "@geist-ui/react"]
     [@bs.scope ("Fieldset", "Footer")]
     external make:
       (~style: ReactDOMRe.Style.t=?, ~children: React.element=?) =>
@@ -102,7 +102,7 @@ module Footer = {
 
   module Status = {
     [@react.component]
-    [@bs.module "@zeit-ui/react"]
+    [@bs.module "@geist-ui/react"]
     [@bs.scope ("Fieldset", "Footer")]
     external make:
       (~style: ReactDOMRe.Style.t=?, ~children: React.element=?) =>
@@ -110,7 +110,7 @@ module Footer = {
       "Status";
   };
 
-  [@react.component] [@bs.module "@zeit-ui/react"] [@bs.scope "Fieldset"]
+  [@react.component] [@bs.module "@geist-ui/react"] [@bs.scope "Fieldset"]
   external make:
     (~style: ReactDOMRe.Style.t=?, ~children: React.element=?) => React.element =
     "Footer";

@@ -31,10 +31,10 @@ let makeProps =
     ~id?,
     ~key?,
     ~className?,
-    ~caption=?caption->(Belt.Option.map(v => ZeitUiHelper.unwrapValue(v))),
+    ~caption=?caption->(Belt.Option.map(v => GeistUIHelper.unwrapValue(v))),
     ~shadow?,
     ~width?,
     unit,
   );
 
-[@bs.module "@zeit-ui/react"] external make: React.component('a) = "Display";
+[@bs.module "@geist-ui/react"] external make: React.component('a) = "Display";

@@ -1,4 +1,4 @@
-[@react.component] [@bs.module "@zeit-ui/react"]
+[@react.component] [@bs.module "@geist-ui/react"]
 external make:
   (
     ~style: ReactDOMRe.Style.t=?,
@@ -12,7 +12,7 @@ external make:
   "Badge";
 
 module Anchor = {
-  [@react.component] [@bs.module "@zeit-ui/react"] [@bs.scope "Badge"]
+  [@react.component] [@bs.module "@geist-ui/react"] [@bs.scope "Badge"]
   external make:
     (
       ~alt: string=?,

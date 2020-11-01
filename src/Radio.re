@@ -1,4 +1,4 @@
-[@react.component] [@bs.module "@zeit-ui/react"]
+[@react.component] [@bs.module "@geist-ui/react"]
 external make:
   (
     ~style: ReactDOMRe.Style.t=?,
@@ -16,7 +16,7 @@ external make:
   "Radio";
 
 module Group = {
-  [@react.component] [@bs.module "@zeit-ui/react"] [@bs.scope "Radio"]
+  [@react.component] [@bs.module "@geist-ui/react"] [@bs.scope "Radio"]
   external make:
     (
       ~style: ReactDOMRe.Style.t=?,
@@ -36,7 +36,7 @@ module Group = {
 };
 
 module Description = {
-  [@react.component] [@bs.module "@zeit-ui/react"] [@bs.scope "Radio"]
+  [@react.component] [@bs.module "@geist-ui/react"] [@bs.scope "Radio"]
   external make:
     (
       ~style: ReactDOMRe.Style.t=?,
@@ -50,7 +50,7 @@ module Description = {
 };
 
 module Desc = {
-  [@react.component] [@bs.module "@zeit-ui/react"] [@bs.scope "Radio"]
+  [@react.component] [@bs.module "@geist-ui/react"] [@bs.scope "Radio"]
   external make:
     (
       ~style: ReactDOMRe.Style.t=?,

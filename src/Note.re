@@ -1,4 +1,4 @@
-[@react.component] [@bs.module "@zeit-ui/react"]
+[@react.component] [@bs.module "@geist-ui/react"]
 external make:
   (
     ~style: ReactDOMRe.Style.t=?,
@@ -6,7 +6,7 @@ external make:
     ~className: string=?,
     ~id: string=?,
     ~_type: [ | `default | `secondary | `success | `warning | `error]=?,
-    ~label: ZeitUiTypes.String_or_bool.t=?,
+    ~label: GeistUITypes.String_or_bool.t=?,
     ~small: bool=?,
     ~filled: bool=?
   ) =>

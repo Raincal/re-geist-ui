@@ -1,4 +1,4 @@
-[@react.component] [@bs.module "@zeit-ui/react"]
+[@react.component] [@bs.module "@geist-ui/react"]
 external make:
   (
     ~style: ReactDOMRe.Style.t=?,
@@ -27,7 +27,7 @@ external make:
   "Card";
 
 module Content = {
-  [@react.component] [@bs.module "@zeit-ui/react"] [@bs.scope "Card"]
+  [@react.component] [@bs.module "@geist-ui/react"] [@bs.scope "Card"]
   external make:
     (~id: string=?, ~className: string=?, ~children: React.element=?) =>
     React.element =
@@ -35,7 +35,7 @@ module Content = {
 };
 
 module Footer = {
-  [@react.component] [@bs.module "@zeit-ui/react"] [@bs.scope "Card"]
+  [@react.component] [@bs.module "@geist-ui/react"] [@bs.scope "Card"]
   external make:
     (
       ~id: string=?,

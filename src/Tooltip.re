@@ -69,7 +69,7 @@ let makeProps =
              | `lite
            ],
          )=?,
-      ~placement: option(ZeitUiTypes.placement)=?,
+      ~placement: option(GeistUITypes.placement)=?,
       ~trigger: option([ | `click | `hover])=?,
       ~enterDelay: option(int)=?,
       ~leaveDelay: option(int)=?,
@@ -84,7 +84,7 @@ let makeProps =
     ~id?,
     ~className?,
     ~key?,
-    ~text=ZeitUiHelper.unwrapValue(text),
+    ~text=GeistUIHelper.unwrapValue(text),
     ~visible?,
     ~initialVisible?,
     ~hideArrow?,
@@ -99,4 +99,4 @@ let makeProps =
     unit,
   );
 
-[@bs.module "@zeit-ui/react"] external make: React.component('a) = "Tooltip";
+[@bs.module "@geist-ui/react"] external make: React.component('a) = "Tooltip";
