@@ -1,5 +1,17 @@
-[@bs.obj]
-external makePropsZui:
+module Component: {
+  type t;
+  let string: string => t;
+  let element: React.element => t;
+} = {
+  [@unboxed]
+  type t =
+    | Any('a): t;
+  let string = (v: string) => Any(v);
+  let element = (v: React.element) => Any(v);
+};
+
+[@react.component] [@bs.module "@geist-ui/react"]
+external make:
   (
     ~style: ReactDOMRe.Style.t=?,
     ~children: React.element=?,
@@ -8,42 +20,12 @@ external makePropsZui:
     ~name: string=?,
     ~className: string=?,
     ~title: string,
-    ~subtitle: 'subtitle=?,
+    ~subtitle: Component.t=?,
     ~initialVisible: bool=?,
-    ~shadow: bool=?,
-    unit
+    ~shadow: bool=?
   ) =>
-  _;
-
-let makeProps =
-    (
-      ~style: option(ReactDOMRe.Style.t)=?,
-      ~children: option(React.element)=?,
-      ~id: option(string)=?,
-      ~key: option(string)=?,
-      ~name: option(string)=?,
-      ~className: option(string)=?,
-      ~title: string,
-      ~subtitle: option([ | `String(string) | `Element(React.element)])=?,
-      ~initialVisible: option(bool)=?,
-      ~shadow: option(bool)=?,
-      unit,
-    ) =>
-  makePropsZui(
-    ~style?,
-    ~children?,
-    ~id?,
-    ~key?,
-    ~name?,
-    ~className?,
-    ~title,
-    ~subtitle=?subtitle->(Belt.Option.map(v => GeistUIHelper.unwrapValue(v))),
-    ~initialVisible?,
-    ~shadow?,
-    unit,
-  );
-
-[@bs.module "@geist-ui/react"] external make: React.component('a) = "Collapse";
+  React.element =
+  "Collapse";
 
 module Group = {
   [@react.component] [@bs.module "@geist-ui/react"] [@bs.scope "Collapse"]

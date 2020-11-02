@@ -1,27 +1,3 @@
-module String_or_stringArray = {
-  [@unboxed]
-  type t =
-    | Any('a): t;
-  let string = (v: string) => Any(v);
-  let stringArray = (v: array(string)) => Any(v);
-};
-
-module String_or_bool = {
-  [@unboxed]
-  type t =
-    | Any('a): t;
-  let string = (v: string) => Any(v);
-  let boolean = (v: bool) => Any(v);
-};
-
-module String_or_number = {
-  [@unboxed]
-  type t =
-    | Any('a): t;
-  let string = (v: string) => Any(v);
-  let number = (v: float) => Any(v);
-};
-
 type placement = [
   | `top
   | `topStart

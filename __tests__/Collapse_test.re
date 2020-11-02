@@ -16,10 +16,14 @@ describe("Collapse", () => {
     let wrapper =
       render(
         <>
-          <Collapse title="title" subtitle={`String("subtitle")}>
+          <Collapse
+            title="title" subtitle={Collapse.Component.string("subtitle")}>
             "content"->str
           </Collapse>
-          <Collapse title="title" subtitle={`String("subtitle")} shadow=true>
+          <Collapse
+            title="title"
+            subtitle={Collapse.Component.string("subtitle")}
+            shadow=true>
             "content"->str
           </Collapse>
         </>,
@@ -32,7 +36,8 @@ describe("Collapse", () => {
     let wrapper =
       render(
         <>
-          <Collapse title="title" subtitle={`String("subtitle")}>
+          <Collapse
+            title="title" subtitle={Collapse.Component.string("subtitle")}>
             "content"->str
           </Collapse>
           <Collapse title="title" initialVisible=true>
@@ -44,24 +49,26 @@ describe("Collapse", () => {
     wrapper |> container |> expect |> toMatchSnapshot;
   });
 
-  test("should throw error when title missing", () => {
-    let errorMessage = ref("");
+  // test("should throw error when title missing", () => {
+  //   let errorMessage = ref("");
 
-    let consoleSpy: MockJs.fn(string => unit, string, unit) = [%raw
-      "jest.spyOn(console, 'error')"
-    ];
-    MockJs.mockImplementation(msg => errorMessage := msg, consoleSpy)
-    |> ignore;
+  //   let consoleSpy: MockJs.fn(string => unit, string, unit) = [%raw
+  //     "jest.spyOn(console, 'error')"
+  //   ];
+  //   MockJs.mockImplementation(msg => errorMessage := msg, consoleSpy)
+  //   |> ignore;
 
-    render(
-      <Collapse subtitle={`String("subtitle")}> "content"->str </Collapse>,
-    )
-    |> ignore;
+  //   render(
+  //     <Collapse subtitle={Collapse.Component.string("subtitle")}>
+  //       "content"->str
+  //     </Collapse>,
+  //   )
+  //   |> ignore;
 
-    consoleSpy |> mockRestore;
+  //   consoleSpy |> mockRestore;
 
-    errorMessage^ |> expect |> toContainString("required");
-  });
+  //   errorMessage^ |> expect |> toContainString("required");
+  // });
 
   testAsync("should expand when title clicked", finish => {
     let wrapper = render(<Collapse title="title"> "content"->str </Collapse>);

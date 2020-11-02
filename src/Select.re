@@ -1,3 +1,15 @@
+module Value: {
+  type t;
+  let arrayOf: array(string) => t;
+  let string: string => t;
+} = {
+  [@unboxed]
+  type t =
+    | Any('a): t;
+  let arrayOf = (v: array(string)) => Any(v);
+  let string = (v: string) => Any(v);
+};
+
 [@react.component] [@bs.module "@geist-ui/react"]
 external make:
   (
@@ -6,8 +18,8 @@ external make:
     ~id: string=?,
     ~name: string=?,
     ~className: string=?,
-    ~value: GeistUITypes.String_or_stringArray.t=?,
-    ~initialValue: GeistUITypes.String_or_stringArray.t=?,
+    ~value: Value.t=?,
+    ~initialValue: Value.t=?,
     ~placeholder: string=?,
     ~width: string=?,
     ~size: [ | `mini | `small | `medium | `large]=?,
@@ -15,7 +27,7 @@ external make:
     ~pure: bool=?,
     ~multiple: bool=?,
     ~disabled: bool=?,
-    ~onChange: GeistUITypes.String_or_stringArray.t => unit=?,
+    ~onChange: Value.t => unit=?,
     ~dropdownClassName: string=?,
     ~dropdownStyle: ReactDOMRe.Style.t=?,
     ~disableMatchWidth: bool=?

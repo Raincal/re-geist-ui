@@ -1,3 +1,15 @@
+module Component: {
+  type t;
+  let callback: (unit => React.element) => t;
+  let element: React.element => t;
+} = {
+  [@unboxed]
+  type t =
+    | Any('a): t;
+  let callback = (v: unit => React.element) => Any(v);
+  let element = (v: React.element) => Any(v);
+};
+
 [@react.component] [@bs.module "@geist-ui/react"]
 external make:
   (
@@ -6,8 +18,7 @@ external make:
     ~id: string=?,
     ~name: string=?,
     ~className: string=?,
-    // TODO React.element | unit => React.element
-    ~content: unit => React.element,
+    ~content: Component.t,
     ~visible: bool=?,
     ~initialVisible: bool=?,
     ~hideArrow: bool=?,

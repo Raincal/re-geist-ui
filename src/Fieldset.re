@@ -1,5 +1,17 @@
-[@bs.obj]
-external makePropsZui:
+module Component: {
+  type t;
+  let string: string => t;
+  let element: React.element => t;
+} = {
+  [@unboxed]
+  type t =
+    | Any('a): t;
+  let string = (v: string) => Any(v);
+  let element = (v: React.element) => Any(v);
+};
+
+[@react.component] [@bs.module "@geist-ui/react"]
+external make:
   (
     ~style: ReactDOMRe.Style.t=?,
     ~children: React.element=?,
@@ -9,41 +21,11 @@ external makePropsZui:
     ~key: string=?,
     ~value: string=?,
     ~label: string=?,
-    ~title: 'title=?,
-    ~subtitle: 'title=?,
-    unit
+    ~title: Component.t=?,
+    ~subtitle: Component.t=?
   ) =>
-  _;
-
-let makeProps =
-    (
-      ~style: option(ReactDOMRe.Style.t)=?,
-      ~children: option(React.element)=?,
-      ~id: option(string)=?,
-      ~name: option(string)=?,
-      ~className: option(string)=?,
-      ~key: option(string)=?,
-      ~value: option(string)=?,
-      ~label: option(string)=?,
-      ~title: option([ | `String(string) | `Element(React.element)])=?,
-      ~subtitle: option([ | `String(string) | `Element(React.element)])=?,
-      unit,
-    ) =>
-  makePropsZui(
-    ~style?,
-    ~children?,
-    ~id?,
-    ~name?,
-    ~className?,
-    ~key?,
-    ~value?,
-    ~label?,
-    ~title=?title->(Belt.Option.map(v => GeistUIHelper.unwrapValue(v))),
-    ~subtitle=?subtitle->(Belt.Option.map(v => GeistUIHelper.unwrapValue(v))),
-    unit,
-  );
-
-[@bs.module "@geist-ui/react"] external make: React.component('a) = "Fieldset";
+  React.element =
+  "Fieldset";
 
 module Group = {
   [@react.component] [@bs.module "@geist-ui/react"] [@bs.scope "Fieldset"]

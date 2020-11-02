@@ -12,7 +12,7 @@ external make:
     ~icon: bool=?,
     ~underline: bool=?,
     ~block: bool=?,
-    ~ref: React.ref(option(Dom.element))=?
+    ~ref: ReactDOMRe.domRef=?
   ) =>
   React.element =
   "Link";

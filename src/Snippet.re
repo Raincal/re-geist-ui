@@ -1,3 +1,15 @@
+module Text: {
+  type t;
+  let arrayOf: array(string) => t;
+  let string: string => t;
+} = {
+  [@unboxed]
+  type t =
+    | Any('a): t;
+  let arrayOf = (v: array(string)) => Any(v);
+  let string = (v: string) => Any(v);
+};
+
 [@react.component] [@bs.module "@geist-ui/react"]
 external make:
   (
@@ -6,7 +18,7 @@ external make:
     ~id: string=?,
     ~name: string=?,
     ~className: string=?,
-    ~text: GeistUITypes.String_or_stringArray.t=?,
+    ~text: Text.t=?,
     ~_type: [
               | `default
               | `secondary

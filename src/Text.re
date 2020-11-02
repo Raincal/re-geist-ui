@@ -1,3 +1,15 @@
+module Size: {
+  type t;
+  let int: int => t;
+  let string: string => t;
+} = {
+  [@unboxed]
+  type t =
+    | Any('a): t;
+  let int = (v: int) => Any(v);
+  let string = (v: string) => Any(v);
+};
+
 [@react.component] [@bs.module "@geist-ui/react"]
 external make:
   (
@@ -19,8 +31,7 @@ external make:
     ~em: bool=?,
     ~b: bool=?,
     ~blockquote: bool=?,
-    // TODO string | int
-    ~size: int=?,
+    ~size: Size.t=?,
     ~_type: [ | `default | `secondary | `success | `warning | `error]=?
   ) =>
   React.element =

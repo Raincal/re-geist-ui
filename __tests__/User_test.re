@@ -6,7 +6,7 @@ open Utils;
 
 describe("User", () => {
   test("should render correctly", () => {
-    let wrapper = render(<User name={`String("witt")} />);
+    let wrapper = render(<User name={User.Component.string("witt")} />);
 
     (() => wrapper |> unmount()) |> expect |> not |> toThrow;
   });
@@ -15,9 +15,9 @@ describe("User", () => {
     let wrapper =
       render(
         <div>
-          <User name={`String("witt")} text="witt" />
+          <User name={User.Component.string("witt")} text="witt" />
           <User
-            name={`String("witt")}
+            name={User.Component.string("witt")}
             src="https://unix.bio/assets/avatar.png"
           />
         </div>,
@@ -28,7 +28,11 @@ describe("User", () => {
 
   test("should render description correctly", () => {
     let wrapper =
-      render(<User name={`String("witt")}> "description"->str </User>);
+      render(
+        <User name={User.Component.string("witt")}>
+          "description"->str
+        </User>,
+      );
 
     wrapper
     |> container
@@ -39,7 +43,7 @@ describe("User", () => {
   test("should render link on user.link", () => {
     let wrapper =
       render(
-        <User name={`String("witt")}>
+        <User name={User.Component.string("witt")}>
           <User.Link href="https://twitter.com/echo_witt">
             "twitter"->str
           </User.Link>

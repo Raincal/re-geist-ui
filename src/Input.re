@@ -23,7 +23,7 @@ external make:
     ~onIconClick: ReactEvent.Synthetic.t => unit=?,
     ~onChange: ReactEvent.Synthetic.t => unit=?,
     ~onClearClick: ReactEvent.Mouse.t => unit=?,
-    ~ref: React.ref(option(Dom.element))=?
+    ~ref: ReactDOMRe.domRef=?
   ) =>
   React.element =
   "Input";
@@ -54,7 +54,7 @@ module Password = {
       ~onIconClick: ReactEvent.Synthetic.t => unit=?,
       ~onChange: ReactEvent.Synthetic.t => unit=?,
       ~onClearClick: ReactEvent.Mouse.t => unit=?,
-      ~ref: React.ref(option(Dom.element))=?,
+      ~ref: ReactDOMRe.domRef=?,
       ~hideToggle: bool=?
     ) =>
     React.element =

@@ -31,7 +31,7 @@ external make:
     ~iconRight: React.element=?,
     // TODO
     ~htmlType: string=?,
-    ~ref: React.ref(option(Dom.element))=?
+    ~ref: ReactDOMRe.domRef=?
   ) =>
   React.element =
   "Button";

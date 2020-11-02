@@ -1,46 +1,30 @@
-[@bs.obj]
-external makePropsZui:
+module Component: {
+  type t;
+  let string: string => t;
+  let element: React.element => t;
+} = {
+  [@unboxed]
+  type t =
+    | Any('a): t;
+  let string = (v: string) => Any(v);
+  let element = (v: React.element) => Any(v);
+};
+
+[@react.component] [@bs.module "@geist-ui/react"]
+external make:
   (
     ~style: ReactDOMRe.Style.t=?,
     ~children: React.element=?,
     ~id: string=?,
     ~className: string=?,
     ~key: string=?,
-    ~name: 'name,
+    ~name: Component.t,
     ~src: string=?,
     ~text: string=?,
-    ~altText: string=?,
-    unit
+    ~altText: string=?
   ) =>
-  _;
-
-let makeProps =
-    (
-      ~style: option(ReactDOMRe.Style.t)=?,
-      ~children: option(React.element)=?,
-      ~id: option(string)=?,
-      ~className: option(string)=?,
-      ~key: option(string)=?,
-      ~name: [ | `String(string) | `Element(React.element)],
-      ~src: option(string)=?,
-      ~text: option(string)=?,
-      ~altText: option(string)=?,
-      unit,
-    ) =>
-  makePropsZui(
-    ~style?,
-    ~children?,
-    ~id?,
-    ~className?,
-    ~key?,
-    ~name=GeistUIHelper.unwrapValue(name),
-    ~src?,
-    ~text?,
-    ~altText?,
-    unit,
-  );
-
-[@bs.module "@geist-ui/react"] external make: React.component('a) = "User";
+  React.element =
+  "User";
 
 module Link = {
   [@react.component] [@bs.module "@geist-ui/react"] [@bs.scope "User"]

@@ -1,5 +1,17 @@
-[@bs.obj]
-external makePropsZui:
+module Component: {
+  type t;
+  let string: string => t;
+  let element: React.element => t;
+} = {
+  [@unboxed]
+  type t =
+    | Any('a): t;
+  let string = (v: string) => Any(v);
+  let element = (v: React.element) => Any(v);
+};
+
+[@react.component] [@bs.module "@geist-ui/react"]
+external make:
   (
     ~style: ReactDOMRe.Style.t=?,
     ~children: React.element=?,
@@ -7,7 +19,7 @@ external makePropsZui:
     ~name: string=?,
     ~className: string=?,
     ~key: string=?,
-    ~text: 'text=?,
+    ~text: Component.t=?,
     ~visible: bool=?,
     ~initialVisible: bool=?,
     ~hideArrow: bool=?,
@@ -41,62 +53,7 @@ external makePropsZui:
     ~leaveDelay: int=?,
     ~offset: int=?,
     ~portalClassName: string=?,
-    ~onVisibleChange: bool => unit=?,
-    unit
+    ~onVisibleChange: bool => unit=?
   ) =>
-  _;
-
-let makeProps =
-    (
-      ~style: option(ReactDOMRe.Style.t)=?,
-      ~children: option(React.element)=?,
-      ~id: option(string)=?,
-      ~className: option(string)=?,
-      ~key: option(string)=?,
-      ~text: [ | `String(string) | `Element(React.element)],
-      ~visible: option(bool)=?,
-      ~initialVisible: option(bool)=?,
-      ~hideArrow: option(bool)=?,
-      ~_type:
-         option(
-           [
-             | `default
-             | `secondary
-             | `success
-             | `warning
-             | `error
-             | `dark
-             | `lite
-           ],
-         )=?,
-      ~placement: option(GeistUITypes.placement)=?,
-      ~trigger: option([ | `click | `hover])=?,
-      ~enterDelay: option(int)=?,
-      ~leaveDelay: option(int)=?,
-      ~offset: option(int)=?,
-      ~portalClassName: option(string)=?,
-      ~onVisibleChange: option(bool => unit)=?,
-      unit,
-    ) =>
-  makePropsZui(
-    ~style?,
-    ~children?,
-    ~id?,
-    ~className?,
-    ~key?,
-    ~text=GeistUIHelper.unwrapValue(text),
-    ~visible?,
-    ~initialVisible?,
-    ~hideArrow?,
-    ~_type?,
-    ~placement?,
-    ~trigger?,
-    ~enterDelay?,
-    ~leaveDelay?,
-    ~offset?,
-    ~portalClassName?,
-    ~onVisibleChange?,
-    unit,
-  );
-
-[@bs.module "@geist-ui/react"] external make: React.component('a) = "Tooltip";
+  React.element =
+  "Tooltip";

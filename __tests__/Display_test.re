@@ -7,7 +7,9 @@ describe("Display", () => {
   test("should render correctly", () => {
     let wrapper =
       render(
-        <Display caption={`String("caption")}> "display"->str </Display>,
+        <Display caption={Display.Component.string("caption")}>
+          "display"->str
+        </Display>,
       );
 
     wrapper |> container |> expect |> toMatchSnapshot |> ignore;
@@ -18,7 +20,7 @@ describe("Display", () => {
   test("should support react-node", () => {
     let wrapper =
       render(
-        <Display caption={`Element(<h1> "h1"->str </h1>)}>
+        <Display caption={Display.Component.element(<h1> "h1"->str </h1>)}>
           "display"->str
         </Display>,
       );
@@ -32,10 +34,14 @@ describe("Display", () => {
     let wrapper =
       render(
         <>
-          <Display caption={`Element(<h1> "h1"->str </h1>)} shadow=true>
+          <Display
+            caption={Display.Component.element(<h1> "h1"->str </h1>)}
+            shadow=true>
             "display"->str
           </Display>
-          <Display caption={`Element(<h1> "h1"->str </h1>)} width="50px">
+          <Display
+            caption={Display.Component.element(<h1> "h1"->str </h1>)}
+            width="50px">
             "display"->str
           </Display>
         </>,
